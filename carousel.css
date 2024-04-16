@@ -1,0 +1,61 @@
+/* CAROUSEL */
+
+.carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carouselImages {
+    display: flex;
+    overflow: hidden;
+}
+
+.carouselLink {
+    display: block;
+    width: 400px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+.carouselImages img {
+    width: 100%;
+    display: block;
+}
+
+.imageTitle {
+    color: #252a34;
+    background-color: #f5c2e7;
+    padding: 10px;
+
+}
+
+button.prev,
+button.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    color: #252a34;
+    font-size: 1.5rem;
+    z-index: 2; /* Make sure they are above the images */
+}
+
+button.prev {
+    left: 10px; /* Adjust this value so it's visible */
+}
+
+button.next {
+    right: 10px; /* Adjust this value so it's visible */
+}
+
+
+button.prev:hover,
+button.next:hover {
+    background-color: #e79ac2;
+}

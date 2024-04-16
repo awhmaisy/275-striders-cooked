@@ -1,0 +1,86 @@
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Spicy Rice", serif;
+    font-size: 26pt;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+.main {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f5e1f7;
+    color: #252a34;
+}
+
+footer {
+    background-color: #252a34; /* Dark gray background */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem; /* Adjusted to ensure footer is at the bottom */
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #f5c2e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+    .logo {
+        font-family: "Spicy Rice", serif;
+        color: #252a34;
+        font-size: 24pt;
+    }
+
+    .logo a {
+        text-decoration: none;
+        color: #252a34;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li {
+            padding: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #252a34;
+            font-weight: bold;
+        }
+
+    .headerIcons {
+        display: flex;
+    }
+
+    .headerIcons .icon {
+        padding: 0 8px;
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+
