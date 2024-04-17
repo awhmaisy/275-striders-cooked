@@ -4,49 +4,10 @@
     <title>Cartoons</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="shoecustomization.css">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
-        .product-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
-
-.product {
-  padding: 30px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.product img {
-  width: 100%;
-  height: auto;
-}
-
-.product h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-
-.product p {
-  margin: 0;
-  font-weight: bold;
-}
-
-.product button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.product button:hover {
-  background-color: #555;
-}
 
    </style>
 
@@ -137,10 +98,22 @@
 
     </section>
 
-        <footer>
-            <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
-        </footer>
+    <div class="shoe-viewer">
+        </div>
 
+            <footer>
+                <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
+            </footer>
 
-    </body>
-    </html>
+            <script type="importmap">
+                {
+                    "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/"
+                }
+                }
+                </script>
+
+            <script type="module" src="./shoe.js"></script>
+        </body>
+        </html>
