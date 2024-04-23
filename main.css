@@ -27,11 +27,11 @@ body {
 }
 
 footer {
-    background-color: #252a34; /* Dark gray background */
+    background-color: #252a34;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem; /* Adjusted to ensure footer is at the bottom */
+    margin-top: 2rem;
 }
 
 
