@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Striders. About Us</title>
@@ -7,9 +8,29 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
     </style>
 
 </head>
+
 <body>
     <header>
         <div class="logo"><a href="main-page.html">Striders.</a></div>
@@ -27,18 +48,65 @@
             <span class="icon">👤</span>
         </div>
     </header>
-   
-        <main>
-            <div class="main">
-                <h1>About Us</h1>
-                <p>THE SOULS BEHIND YOUR SOLES</p>
-                
-                
-            </div>
-        </main>
 
-        <footer>
-            <p>&copy; 2024 Striders. All rights reserved.</p>
-        </footer>
-    </body>
-    </html>
+    <main>
+        <div class="main">
+            <h1>About Us</h1>
+            <p>THE SOULS BEHIND YOUR SOLES</p>
+
+            <section id="about-striders">
+                <h2>About Striders</h2>
+                <p>Insert your content about Striders here.</p>
+            </section>
+
+            <section id="website-team">
+                <h2>Website Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Mari Edler</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Ashley Chan</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Tristan Wilcher</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Sinchana Nama</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Mei Higashi</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="collectionassets/nascar.avif" alt="Team Member 1">
+                        <h3>Giovanni Goree</h3>
+                        <p>Lead Developer</p>
+                        <p>Description of John Doe's role and responsibilities.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Striders. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
