@@ -1,6 +1,5 @@
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>Animals</title>
 
     <link rel="stylesheet" href="main.css">
@@ -8,132 +7,143 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
         .product-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-}
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
 
-.product {
-  padding: 30px;
-  background-color: #f9f9f9;
-  text-align: center;
-}
+        .product {
+            padding: 30px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
 
-.product img {
-  width: 100%;
-  height: auto;
-}
+        .product img {
+            width: 100%;
+            height: auto;
+        }
 
-.product h2 {
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
+        .product h2 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
 
-.product p {
-  margin: 0;
-  font-weight: bold;
-}
+        .product p {
+            margin: 0;
+            font-weight: bold;
+        }
 
-.product button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+        .product button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.product button:hover {
-  background-color: #555;
-}
-
-   </style>
+        .product button:hover {
+            background-color: #555;
+        }
+    </style>
 
 </head>
 <body>
-        <header>
-            <div class="logo"><a href="main-page.html">Striders.</a></div>
-            <nav>
-                <ul>
-                    <li><a href="all-pins.html">All Pins</a></li>
-                    <li><a href="collections.html">Collections</a></li>
-                    <li><a href="why-striders.html">Why Striders?</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                </ul>
-            </nav>
-            <div class="headerIcons">
-                <span class="icon">🔍</span>
-                <span class="icon">❤️</span>
-                <span class="icon">👤</span>
-            </div>
-        </header>
-   
-        <main>
-            <div class="main">
-                <h1>Animals</h1>
-                <p>Embrace your wild side from your head to your toes</p>
-                
-            </div>
-        </main>
+<header>
+    <div class="logo"><a href="main-page.html">Striders.</a></div>
+    <nav>
+        <ul>
+            <li><a href="all-pins.html">All Pins</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="why-striders.html">Why Striders.?</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="headerIcons">
+        <span class="icon">🔍</span>
+        <span class="icon">❤️</span>
+        <span class="icon">👤</span>
+    </div>
+</header>
 
-        <section class="product-list">
-        <div class="product">
-            <img src="collectionassets/blackcat.avif" alt="Product 1">
-            <h2>Cat</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div>
+<main>
+    <div class="main">
+        <h1>Animals</h1>
+        <p>Embrace your wild side from your head to your toes</p>
+    </div>
+</main>
 
-        <div class="product">
-            <img src="collectionassets/unicorn.avif" alt="Product 2">
-            <h2>Unicorn</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div>
+<section class="product-list">
+    <div class="product">
+        <img src="collectionassets/blackcat.avif" alt="Product 1">
+        <h2>Cat</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Cat', 6)">Add to Cart</button>
+    </div>
 
-        <div class="product">
-            <img src="collectionassets/ladybug.avif" alt="Product 3">
-            <h2>Ladybug</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div>
+    <div class="product">
+        <img src="collectionassets/unicorn.avif" alt="Product 2">
+        <h2>Unicorn</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Unicorn', 6)">Add to Cart</button>
+    </div>
 
+    <div class="product">
+        <img src="collectionassets/ladybug.avif" alt="Product 3">
+        <h2>Ladybug</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Ladybug', 6)">Add to Cart</button>
+    </div>
 
-        <div class="product">
-            <img src="collectionassets/butterfly.avif" alt="Product 4">
-            <h2>Butterfly</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div> 
+    <div class="product">
+        <img src="collectionassets/butterfly.avif" alt="Product 4">
+        <h2>Butterfly</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Butterfly', 6)">Add to Cart</button>
+    </div>
 
-        <div class="product">
-            <img src="collectionassets/dino.avif" alt="Product 5">
-            <h2>Dinosaur</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div> 
+    <div class="product">
+        <img src="collectionassets/dino.avif" alt="Product 5">
+        <h2>Dinosaur</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Dinosaur', 6)">Add to Cart</button>
+    </div>
 
-        <div class="product">
-            <img src="collectionassets/pawprint.avif" alt="Product 6">
-            <h2>Paw Print</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div> 
+    <div class="product">
+        <img src="collectionassets/pawprint.avif" alt="Product 6">
+        <h2>Paw Print</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Paw Print', 6)">Add to Cart</button>
+    </div>
 
-        <div class="product">
-            <img src="collectionassets/llama.avif" alt="Product 7">
-            <h2>Llama</h2>
-            <p>$6.00</p>
-            <button>Add to Cart</button>
-        </div> 
+    <div class="product">
+        <img src="collectionassets/llama.avif" alt="Product 7">
+        <h2>Llama</h2>
+        <p>$6.00</p>
+        <button onclick="addToCart('Llama', 6)">Add to Cart</button>
+    </div>
+</section>
 
-    </section>
+<footer>
+    <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
+</footer>
 
-        <footer>
-            <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
-        </footer>
+<script>
+    function addToCart(productName, price) {
+        // Get the existing cart items from local storage or initialize an empty array
+        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
+        // Add the new item to the cart
+        cartItems.push({productName: productName, price: price});
 
-    </body>
-    </html>
+        // Store the updated cart items back to local storage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        // Redirect to the shopping cart page
+        window.location.href = "shopping-cart.html";
+    }
+</script>
+
+</body>
+</html>
