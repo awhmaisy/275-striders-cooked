@@ -1,16 +1,11 @@
 <html>
+
 <head>
-    <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopping Cart</title>
 
   <style>
-    /* Basic styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
     .container {
       max-width: 800px;
       margin: 20px auto;
@@ -19,16 +14,20 @@
       border-radius: 5px;
       background-color: #f9f9f9;
     }
+
     h2 {
       text-align: center;
     }
+
     ul {
       list-style-type: none;
       padding: 0;
     }
+
     li {
       margin-bottom: 10px;
     }
+
     button {
       padding: 5px 10px;
       background-color: lightpink;
@@ -37,9 +36,11 @@
       border-radius: 4px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: lightpink;
     }
+
     .cart {
       border: 1px solid #ccc;
       padding: 10px;
@@ -48,86 +49,93 @@
     }
   </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="logo"><a href="main-page.html">Striders.</a></div>
-        <nav>
-            <ul>
-                <li><a href="all-pins.html">All Pins</a></li>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="why-striders.html">Why Striders.?</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </nav>
-        <div class="headerIcons">
-            <span class="icon">🔍</span>
-            <span class="icon">❤️</span>
-            <span class="icon">👤</span>
-        </div>
-    </header>
+  <header>
+    <div class="logo"><a href="main-page.html">Striders.</a></div>
+    <nav>
+      <ul>
+        <li><a href="all-pins.html">All Pins</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="why-striders.html">Why Striders.?</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="headerIcons">
+      <span class="icon">🔍</span>
+      <span class="icon">❤️</span>
+      <span class="icon">👤</span>
+    </div>
+  </header>
 
-<div class="container">
-  <h2>Shopping Cart</h2>
-  <div id="products">
-    <ul>
-      <li>Product 1 <button onclick="addToCart('Product 1', 10)">Add to Cart</button></li>
-      <li>Product 2 <button onclick="addToCart('Product 2', 20)">Add to Cart</button></li>
-      <li>Product 3 <button onclick="addToCart('Product 3', 30)">Add to Cart</button></li>
-    </ul>
+  <div class="container">
+    <h2>Shopping Cart</h2>
+    <div id="products">
+      <ul>
+        <li>Product 1 <button onclick="addToCart('Product 1', 10)">Add to Cart</button></li>
+        <li>Product 2 <button onclick="addToCart('Product 2', 20)">Add to Cart</button></li>
+        <li>Product 3 <button onclick="addToCart('Product 3', 30)">Add to Cart</button></li>
+      </ul>
+    </div>
+    <div class="cart">
+      <h3>Cart</h3>
+      <ul id="cart-items">
+        <!-- Cart items will be displayed here -->
+      </ul>
+      <p id="total">Total:</p>
+    </div>
   </div>
-  <div class="cart">
-    <h3>Cart</h3>
-    <ul id="cart-items">
-      <!-- Cart items will be displayed here -->
-    </ul>
-    <p>Total: $
 
-    </p>
-</div>
-</div>
-
-<footer>
+  <footer>
     <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
-</footer>
+  </footer>
+  <script>// Function to add items to the cart
+    function addToCart(productName, price) {
+      // Get the existing cart items from local storage or initialize an empty array
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-<script>
-// Function to add items to the cart
-function addToCart(productName, price) {
-    // Create a new list item
-    var li = document.createElement("li");
-    // Set the inner HTML of the list item with product name and price
-    li.innerHTML = productName + " - $" + price + " <button onclick=\"removeFromCart(this)\">Remove</button>";
-    // Append the list item to the cart
-    document.getElementById("cart-items").appendChild(li);
-    // Update the total
-    updateTotal(price);
-}
+      // Add the new item to the cart
+      cartItems.push({ productName: productName, price: price });
 
-// Function to remove items from the cart
-function removeFromCart(button) {
-    // Get the parent element of the button (which is the list item)
-    var li = button.parentElement;
-    // Get the price from the text content of the list item
-    var price = parseFloat(li.textContent.split(" - $")[1]);
-    // Remove the list item from the cart
-    li.remove();
-    // Update the total by subtracting the price
-    updateTotal(-price);
-}
+      // Store the updated cart items back to local storage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
 
-// Function to update the total
-function updateTotal(amount) {
-    // Get the total element
-    var totalElement = document.getElementById("total");
-    // Parse the current total
-    var total = parseFloat(totalElement.textContent.split("$")[1]);
-    // Update the total by adding the amount
-    total += amount;
-    // Set the new total in the total element
-    totalElement.textContent = "Total: $" + total.toFixed(2);
-}
-</script>
+      // Redirect to the shopping cart page
+      window.location.href = "shopping-cart.html";
+    }
+
+    // Function to display cart items and calculate total
+    function displayCartItemsAndCalculateTotal() {
+      // Get the cart items from local storage
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      var total = 0;
+
+      // Clear the cart items display
+      var cartItemsDisplay = document.getElementById('cart-items');
+      cartItemsDisplay.innerHTML = '';
+
+      // Iterate over the cart items and display them
+      cartItems.forEach(function (item) {
+        var li = document.createElement('li');
+        li.textContent = item.productName + ' - $' + item.price;
+        cartItemsDisplay.appendChild(li);
+
+        // Add the item's price to the total
+        total += parseFloat(item.price);
+      });
+
+      // Display the total
+      var totalDisplay = document.getElementById('total');
+      totalDisplay.textContent = 'Total: $' + total.toFixed(2);
+    }
+
+    // Call the function to display cart items and calculate total when the page loads
+    document.addEventListener('DOMContentLoaded', displayCartItemsAndCalculateTotal);
+  </script>
+
+  </script>
 
 </body>
+
 </html>
