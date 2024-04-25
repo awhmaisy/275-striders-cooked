@@ -49,6 +49,10 @@ header {
         font-family: "Spicy Rice", serif;
         color: #252a34;
         font-size: 24pt;
+        border: #f5e1f7 solid 3pt;
+        border-radius: 10px;
+        background-color: #f5e1f7;
+        padding: 0px 10px;
     }
 
     .logo a {
@@ -59,10 +63,15 @@ header {
     nav ul {
         list-style: none;
         display: flex;
+        border: #f5e1f7 solid 3pt;
+        border-radius: 10px;
+        background-color: #f5e1f7;
+        padding: 10px 10px;
     }
 
         nav ul li {
-            padding: 0 1rem;
+            padding: 0 15px;
+
         }
 
         nav ul li a {
@@ -73,9 +82,12 @@ header {
 
     .headerIcons {
         display: flex;
+        border: #f5e1f7 solid 3pt;
+        border-radius: 10px;
+        background-color: #f5e1f7;
     }
 
     .headerIcons .icon {
         padding: 0 8px;
-        font-size: 1.5rem;
+        font-size: 18pt;
     }
