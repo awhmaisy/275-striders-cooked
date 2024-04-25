@@ -1,13 +1,13 @@
 <html>
-
 <head>
-  
-  <meta charset="UTF-8">
-  <title>Shopping Cart</title>
+    <meta charset="UTF-8">
+    <title>Cart</title>
 
-  <link rel="stylesheet" href="main.css">
-  
-  <style>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
     .container {
       max-width: 800px;
       margin: 20px auto;
@@ -21,12 +21,16 @@
       text-align: center;
     }
 
-    ul {
+    .container ul {
       list-style-type: none;
       padding: 0;
     }
 
-    li {
+    .container li {
+      margin-bottom: 10px;
+    }
+
+    .container hr {
       margin-bottom: 10px;
     }
 
@@ -71,6 +75,14 @@
             <span class="icon">👤</span>
         </div>
     </header>
+    
+    <main>
+      <div class="main">
+          <h1>Check Out</h1>
+          <p>Thanks for shopping with us!</p>
+          
+      </div>
+  </main>
 
   <div class="container">
     <h2>Shopping Cart</h2>
@@ -82,11 +94,11 @@
       </ul>
     </div>
     <div class="cart">
-      <h3>Cart</h3>
+      <h3>Cart</h3><br>
       <ul id="cart-items">
         <!-- Cart items will be displayed here -->
-      </ul>
-      <p id="total">Total:</p>
+      </ul><hr>
+      <p style="font-weight: bold;" id="total">Total:</p>
     </div>
   </div>
 
