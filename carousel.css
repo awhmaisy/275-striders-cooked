@@ -14,6 +14,10 @@
     gap: 15px;
 }
 
+.carouselImages a {
+    text-decoration:none;
+}
+
 .carouselLink {
     display: block;
     width: 400px;
@@ -24,50 +28,67 @@
 .carouselImages img {
     width: 100%;
     display: block;
-    border:#ffffff solid 10px;
+    border:#f5c2e7 solid 10px;
     border-radius: 70px;
+    opacity: .9;
+    transition: .5s;
 }
+
+    .carouselImages img:hover {
+        
+        border:#f5c2e7 solid 10px;
+        border-radius: 85px;
+        opacity: 1;
+    }
 
 .imageTitle {
     color: #252a34;
     background-color: #f5c2e7;
-    padding: 10px;
-
+    border: #f5e1f7 solid 3pt;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: bold;
+    
 }
 
 button.prev {
     position: absolute;
-    left: 15px;
-    top: 40%;
+    left: 20px;
+    top: 38%;
     background-color: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: 15px;
     padding: 10pt 15pt;
     color: #252a34;
     font-size: 20pt; 
-    border:#f5c2e7 solid 5px;
+    bborder:#252a34 solid 5px;
     border-radius: 70px;
+    transition: .5s;
 }
 
 button.next {
     position: absolute;
-    right: 15px;
-    top: 40%;
+    right: 20px;
+    top: 38%;
     background-color: rgba(255, 255, 255, 0.7);
     border: none;
-    
     border-radius: 15px;
     padding: 10pt 15pt;
     color: #252a34;
     font-size: 20pt;
-    border:#f5c2e7 solid 5px;
+    bborder: #252a34 solid 5px;
     border-radius: 70px;
+    transition: .5s;
 }
 
 button.prev:hover {
-    background-color: #e79ac2;
+    background-color: #f5e1f7;
+    
 }
 
 button.next:hover {
-    background-color: #e79ac2;
+    background-color: #f5e1f7;
+    
 }
