@@ -93,7 +93,7 @@ header {
     }
 
     .headerIcons .icon {
-        padding: 0 8px;
+        padding: 5px 10px;
         font-size: 18pt;
         transition: .5s;
     }
