@@ -23,19 +23,24 @@
 
 .product p {
     margin: 0;
-    font-weight: bold;
+    ffont-weight: bold;
+    font-family: "Raleway";
 }
 
 .product button {
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
+    font-family: "Raleway";
+    ffont-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.5s;
 }
 
 .product button:hover {
     background-color: #555;
+    border-radius: 10px;
 }
