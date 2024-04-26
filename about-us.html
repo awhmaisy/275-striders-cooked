@@ -36,6 +36,11 @@
             max-width: 200px;
             border-radius: 50%;
             margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.1);
         }
 
         hr {
@@ -49,6 +54,59 @@
             color: #f5c2e7;
             background-color: #f5c2e7;
         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+            visibility: hidden;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: moveBackground 10s ease infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: black; }
+        }
+
+        .typing {
+            font-size: 24px;
+            width: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid black;
+            animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
     </style>
 
 </head>
@@ -74,10 +132,10 @@
 
     <main>
         <div class="main">
-            <h1>About Us</h1>
+            <h1 class="typing">About Us</h1>
             <p>THE SOULS BEHIND YOUR SOLES</p>
             <br><br>
-            <section id="about-striders">
+            <section id="about-striders" class="fade-in">
                 <p>Striders revolutionizes shoe customization by introducing versatile charms that can attach to any
                     type of shoe, breaking away from the limitations set by traditional options like Crocs' Jibbitz.
                     While Jibbitz allowed for personalization, their application was restricted to just the Croc and the
@@ -89,7 +147,7 @@
 
             <br><br><br>
             <hr><br><br>
-            <section id="website-team">
+            <section id="website-team" class="fade-in">
                 <h2>Striders Team</h2><br>
                 <div class="team-members">
                     <div class="team-member">
@@ -117,7 +175,7 @@
 
             <br><br>
             <hr><br><br>
-            <section id="website-team">
+            <section id="website-team" class="fade-in">
                 <h2>Website Team</h2><br>
                 <div class="team-members">
                     <div class="team-member">
