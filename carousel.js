@@ -5,7 +5,7 @@ const totalSlides = slides.length / 1;
 
 function showSlide(index) {
   
-    const marginLeft = index * -400;
+    const marginLeft = index * -415;
     document.querySelector('.carouselImages').style.marginLeft = marginLeft + 'px';
 }
 
