@@ -212,6 +212,10 @@
             width: 100%;
             height: 100%;
         }
+        .gallery-image p {
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
 
 </head>
@@ -242,51 +246,19 @@
                 <div class="gallery-container">
                     <div class="gallery-image">
                         <img src="collectionassets/key partners.jpeg" alt="Key Partners" id="gallery-img">
+                        <p>Description of the image goes here.</p>
                     </div>
+                    
                     <button id="prevBtn">Prev</button>
                     <button id="nextBtn">Next</button>
                 </div>
             </div>
-            <canvas id="myFinanceChart" width="400" height="400"></canvas>
+            <div class="gallery-image">
+                <canvas id="myFinanceChart" width="200" height="200"></canvas>
+                <p>Description of the chart goes here.</p>
+            </div>
         </main>
-        <div class="container">
-            <div id="thumbnails-container">
-                <div id="thumbnails">
-                    <img src="awhmaisy_screenshot.png" class="thumb" id="thumb5"
-                        caption="<strong>https://awhmaisy.com</strong>, <em>a creation by mei</em>" />
-                    <img src="skirts_comp.jpg" class="thumb" id="thumb1"
-                        caption="<h2>skirts</h2>
-                        
-                        <br>
-                        skirts have been part of the mei-mei brand for as long as i've lived; but the journey to find the right kind that fits me, fits my lifestyle and fits my closet has been a long one! i absolutely love shushu/tong and sandy liang's skirt vibe - alternative chic, still preppy, very cute. i do have a negative impression of their materials, which keeps me from ordering; i'm just a very selective girl! i haven't found designs i like yet, but i think that i'll invest in a few skirts for spring at a lower price point. i'm also considering whipping out my sewing machine." />
     
-                    <img src="blouse_comp.jpg" class="thumb" id="thumb2"
-                        caption="<h2>blouses</h2>
-                        <br>
-                        on a day-to-day basis, i've been reaching for the same trio of tops from doll's kill, vintage prada and some fast fashion demons that i do not care to acknowledge. with my slacks, i've found great value in the materials i select. when i flounce around in my polyester button-downs, i find that EVERYTHING sticks. i've only recently gotten into the materials i use, but i suspect that an investment in linen, cotton, poplin, muslin and wool might do me well.
-                        <br><br>
-                        my favorite blouses visually come from ganni, anne fontaine, comme des garcons, sandy liang, pushbutton, kijun, yuhan wang, grace ling, simone rocha, and a few other online sites. material-wise, i think leset, tekla, loulou studios, the row (of course), and any vintage prada are simply irresistible. linen is held at the highest energetic frequency, and a collection of thin tops would give me variety and autonomy along with the peace of knowing that i am (quite literally) being elevated." />
-    
-                    <img src="heels_comp.jpg" style="border-color: #EE80C5;" class="thumb" id="thumb3"
-                        caption="<h2>stems</h2>
-                        <br>
-                        once you hear the clack on the ground, you get used to it - and then you start to like it. i hold great value in the way i present myself to the world, and for me, this makes all the difference. when i hold myself to a high professional standard of //put-togetherness, my perceptions about my work and my schooling are elevated and i find that i do things better and faster. 
-                        <br><br>
-                        i have never been very much interested in the things i put on my feet, but after i received my DREAM sneakers in the mail (the naked wolfe sprinters.. yes, they give me around 3 inches of extra height) i found myself going down a rabbit hole. first, it was the fabiana from nicole saldana... then, it spiraled into aeyde's black nappa heels, miu miu slingbacks, pink ted baker pumps with the cutest bows, and now, shushu/tong's strappy stiletto heels. i can't resist." />
-    
-                    <img src="MaisyJayPersona.jpg" class="thumb" id="thumb4"
-                        caption="my process of ideation for @maisy__j, expressed through figma! i have been crafting the identity of Maisy Jay for about a year now; but i thought i'd share my creation logic for you. here's an excerpt from my blog that puts her into words: <br><br><em>hi, my name is mei higashi. i am a storyteller, and the creator of maisy jay. my writing voice derives from my experience as a reporter for the the wallis annenberg center for performing arts in beverly hills; my background in journalism quickly launched an obsession with short-form media, on tiktok and instagram. though i am no longer working in journalism or reporting professionally, i will never stray away from writing.<br><br>
-                        i materialized the character “maisy jay” to allow for expansion in myself through an exercise of creativity, abstraction, obfuscation and truly, an abundance of verbiage. she is a concept that represents the minute thoughts that run through my mind and don’t always find their way out; i find it cathartic to give these ideas a shape, in the form of a blog.<br><br>
-                        maisy jay is connected to the digital plane in three ways: on this blog, on twitter, and in tumblr/instagram photo galleries. i hope that she may find herself in a physical installation someday, but only time will tell! i hope you enjoy the inklings of her character in my literary pieces - keep an eye out for the traces and laces of mei in between.</em>" />
-                </div>
-            </div>
-    
-            <div id="main-container">
-                <img src="awhmaisy_screenshot.png" name="mainphoto" id="mainphoto" />
-                <div id="caption"><strong>https://awhmaisy.com</strong>, <em>a creation by mei</em></div>
-            </div>
-    
-        </div>
         <footer>
             <p>&copy; 2024 Striders. All rights reserved.</p>
         </footer>
@@ -313,12 +285,14 @@
             currentIndex = (currentIndex + 1) % images.length;
             imgElement.src = images[currentIndex];
             imgElement.alt = captions[currentIndex];
+            imgElement.nextElementSibling.textContent = captions[currentIndex]; // Add this line
         });
 
         prevBtn.addEventListener('click', function() {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             imgElement.src = images[currentIndex];
             imgElement.alt = captions[currentIndex];
+            imgElement.nextElementSibling.textContent = captions[currentIndex]; // Add this line
         });
     });
     </script>
