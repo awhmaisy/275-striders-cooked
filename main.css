@@ -111,3 +111,55 @@ header {
     .headerIcons .icon:hover {
         font-size: 19pt;
     }
+
+    .search-container {
+        position: absolute;
+        top: 60px; /* Adjust based on your header's height */
+        right: 10px;
+        width: 0;
+        overflow: hidden;
+        transition: width 0.5s ease;
+        z-index: 1000; /* Ensure it's above other content */
+        background: white;
+        border: 1px solid #ccc;
+    }
+    
+    .search-input {
+        border: none;
+        padding: 8px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .results-container {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: white;
+        border: 1px solid #ccc;
+        display: none;
+    }
+    
+    .results-container div {
+        padding: 8px;
+        cursor: pointer;
+    }
+    
+    .results-container div:hover {
+        background-color: #f0f0f0;
+    }
+
+    .search-button {
+        padding: 8px 10px;
+        border: none;
+        background-color: #ef5fb3;
+        color: white;
+        cursor: pointer;
+        border-left: 1px solid #ccc; /* visually connects the button with the input */
+    }
+    
+    .search-button:hover {
+        background-color: #d491af;
+    }
+    
+    
