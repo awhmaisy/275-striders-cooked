@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Striders. Main Page</title>
@@ -10,23 +11,67 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
 
-        img{
+        img {
             height: 400px;
         }
 
         @keyframes colorChange {
-            0% { color: black; }
-            50% { color: #ef5fb3; }
-            100% { color: black; }
+            0% {
+                color: black;
+            }
+
+            50% {
+                color: #ef5fb3;
+            }
+
+            100% {
+                color: black;
+            }
         }
 
         .how-it-works {
             animation: colorChange 2s infinite;
         }
 
+        .accordion {
+            font-family: "Raleway", sans-serif;
+            font-size: 14;
+            background-color: #f5c2e7;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 70%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            border-radius: 10px;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ef5fb3;
+        }
+
+        .panel {
+            font-family: "Raleway", sans-serif;
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.2s;
+            border-radius: 0 0 10px 10px;
+            width: inherit;
+            text-align: center;
+        }
+
+        .faq {
+            padding-top: 20px;
+        }
     </style>
 
 </head>
+
 <body>
     <header>
         <div class="logo"><a href="main-page.html">Striders.</a></div>
@@ -46,88 +91,144 @@
             <span class="icon">👤</span>
         </div>
     </header>
-   
-        <main>
-            <div style="background-color: #ffffff;" class="main">
-                <h1>Unleash Your Shoes' Personality</h1>
-                <br>
-                <p>CUSTOMIZE. PERSONALIZE. REVOLUTIONIZE.</p>
-                
-                <div class="carousel">
-                    
-                    <div class="carouselImages">
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionsports.html" class="carouselLink">
-                            <img src="collectionassets/strider1.png" alt="Shoe 1">
-                            <br><br>
-                            <span class="imageTitle">Sports</span>
-                        </a>
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectioncartoon.html" class="carouselLink">
-                            <img src="collectionassets/strider2.png" alt="Shoe 2">
-                            <br><br>
-                            <span class="imageTitle">Cartoon</span>
-                        </a>
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionletters.html" class="carouselLink">
-                            <img src="collectionassets/strider3.png" alt="Shoe 3">
 
-                            <br><br>
-                            <span class="imageTitle">Letters</span>
-                        </a>
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionretro.html" class="carouselLink">
-                            <img src="collectionassets/strider1.png" alt="Shoe 1">
-                            <br><br>
-                            <span class="imageTitle">Retro</span>
-                        </a>
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionuniversity.html" class="carouselLink">
-                            <img src="collectionassets/strider2.png" alt="Shoe 2">
-                            <br><br>
-                            <span class="imageTitle">University</span>
-                        </a>
-                        <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionanimal.html" class="carouselLink">
-                            <img src="collectionassets/strider3.png" alt="Shoe 3">
+    <main>
+        <div style="background-color: #ffffff;" class="main">
+            <h1>Unleash Your Shoes' Personality</h1>
+            <br>
+            <p>CUSTOMIZE. PERSONALIZE. REVOLUTIONIZE.</p>
 
-                            <br><br>
-                            <span class="imageTitle">Animal</span>
-                            <br><br>
-                        </a>
-                        
-                        <button class="prev" onclick="moveSlide(-1)">❮</button>
-                        <button class="next" onclick="moveSlide(1)">❯</button>
-                        
-                    </div>
-                    
-                </div>
-            
-                <br><br>
-                <div>
-                    <h4 style="font-size: 20;" class="how-it-works"> <em> Revolutionize shoe customization by introducing versatile charms that can attach
-                        to any type of shoe! </em> </h4>
+            <div class="carousel">
 
-                    <br><br><br>
-                    <h1 style="font-size: 25;" class="how-it-works"> How it Works </h1>
-                    <li style = "text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;" class="how-it-works">
-                        <ul>
-                            <strong>Pin Back:</strong> This foundational element is inserted from the inside of the shoe, piercing through the fabric so
-                            only its shaft protrudes outward. The base remains inside, securing the pin in place.
-                        </ul> <br>
-                        <ul>
-                            <strong>Pin Shield:</strong> Accompanying the Pin Back, the Pin Shield is a protective cover that facilitates the piercing
-                            process. It guides the Pin Back through the fabric safely and efficiently, and is removed once the pin is in
-                            position.
-                        </ul> <br>
-                        <ul>
-                            <strong>Pin Body:</strong> The Pin Body is the backing of the decorative element that displays the design. It attaches from
-the outer side of the shoe, connecting to the Pin Back's shaft that extends through the fabric. Designed for a
-snug fit, it ensures the decoration stays secure and is easy to attach, allowing for quick customization.
-                        </ul>
-                    </li>
+                <div class="carouselImages">
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionsports.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider1.png" alt="Shoe 1">
+                        <br><br>
+                        <span class="imageTitle">Sports</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectioncartoon.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider2.png" alt="Shoe 2">
+                        <br><br>
+                        <span class="imageTitle">Cartoon</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionletters.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider3.png" alt="Shoe 3">
+
+                        <br><br>
+                        <span class="imageTitle">Letters</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionretro.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider1.png" alt="Shoe 1">
+                        <br><br>
+                        <span class="imageTitle">Retro</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionuniversity.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider2.png" alt="Shoe 2">
+                        <br><br>
+                        <span class="imageTitle">University</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionanimal.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider3.png" alt="Shoe 3">
+
+                        <br><br>
+                        <span class="imageTitle">Animal</span>
+                        <br><br>
+                    </a>
+
+                    <button class="prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="next" onclick="moveSlide(1)">❯</button>
 
                 </div>
 
             </div>
-        </main>
 
-        <footer>
-            <p>&copy; 2024 Striders. All rights reserved.</p>
-        </footer>
-    </body>
-    </html>
+            <br><br>
+            <div>
+                <h4 style="font-size: 20;" class="how-it-works"> <em> Revolutionize shoe customization by introducing
+                        versatile charms that can attach
+                        to any type of shoe! </em> </h4>
+
+                <br><br><br>
+                <h1 style="font-size: 25;" class="how-it-works"> How it Works </h1>
+                <li style="text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;"
+                    class="how-it-works">
+                    <ul>
+                        <strong>Pin Back:</strong> This foundational element is inserted from the inside of the shoe,
+                        piercing through the fabric so
+                        only its shaft protrudes outward. The base remains inside, securing the pin in place.
+                    </ul> <br>
+                    <ul>
+                        <strong>Pin Shield:</strong> Accompanying the Pin Back, the Pin Shield is a protective cover
+                        that facilitates the piercing
+                        process. It guides the Pin Back through the fabric safely and efficiently, and is removed once
+                        the pin is in
+                        position.
+                    </ul> <br>
+                    <ul>
+                        <strong>Pin Body:</strong> The Pin Body is the backing of the decorative element that displays
+                        the design. It attaches from
+                        the outer side of the shoe, connecting to the Pin Back's shaft that extends through the fabric.
+                        Designed for a
+                        snug fit, it ensures the decoration stays secure and is easy to attach, allowing for quick
+                        customization.
+                    </ul>
+                </li>
+
+            </div>
+
+            <!-- FAQ Accordion Section -->
+            <div class="faq">
+                <button class="accordion">What is Striders?</button>
+                <div class="panel">
+                    <p>Striders is a shoe customization company that offers a wide range of charms to personalize your
+                        shoes.</p>
+                </div>
+
+                <button class="accordion">How do I customize my shoes?</button>
+                <div class="panel">
+                    <p>You can customize your shoes by attaching our charms to them. We offer a variety of designs to
+                        suit your style.</p>
+                </div>
+
+                <button class="accordion">Where are Striders Shoes' pins produced?</button>
+                <div class="panel">
+                    <p>We started Striders Shoes at USC in Los Angeles. Production was initially done in the makerspace
+                        of the <a href="https://iovine-young.usc.edu/discover/spaces-that-drive-innovation"
+                            target="_blank">
+                            Iovine and Young Academy
+                        </a>, where prototyping and production tools are made readily
+                        available to materialize student ideas.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Striders. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+</html>
