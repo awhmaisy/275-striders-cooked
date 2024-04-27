@@ -44,3 +44,17 @@
     background-color: #555;
     border-radius: 10px;
 }
+
+.product-view {
+    width: 70%;
+    padding: 20px;
+}
+
+.shoe-viewer {
+    width: 33%;
+    height: 100vh; 
+    overflow: hidden;
+    border-radius: 10px;
+    border: 10px solid #f5c2e7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+}
