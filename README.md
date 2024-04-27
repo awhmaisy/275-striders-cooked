@@ -42,7 +42,7 @@ the striders team project is part of the acad 275 course, focusing on building c
 our project is powered by a dedicated team of innovators and creators. get to know us a bit better!
 
 ### :smiley: name 1
-![name 1](teamassets/mari.jpeg)
+<img src="teamassets/mari.jpeg" width="100" alt="Name 1"/>
 - **short bio**: a brief description of name 1. this could include interests, what they bring to the project, or fun facts.
 - **role**: what name 1 does on the team.
 
