@@ -40,7 +40,7 @@ striders shoes is a project architected by lukas ross, a BFA student at USC's ro
 our project is powered by a dedicated team of innovators and creators. get to know us a bit better!
 
 ### :smiley: mei higashi
-<img src="teamassets/mei.jpg" width="100" alt="Name 1"/>
+<img src="teamassets/mei.JPG" width="100" alt="Name 1"/>
 
 - **Short Bio**: A brief description of Name 1. This could include interests, what they bring to the project, or fun facts.
 - **Role**: What Name 1 does on the team.
