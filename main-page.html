@@ -13,6 +13,17 @@
         img{
             height: 400px;
         }
+
+        @keyframes colorChange {
+            0% { color: black; }
+            50% { color: #ef5fb3; }
+            100% { color: black; }
+        }
+
+        .how-it-works {
+            animation: colorChange 2s infinite;
+        }
+
     </style>
 
 </head>
@@ -88,12 +99,12 @@
             
                 <br><br>
                 <div>
-                    <h4 style="font-size: 20;"> <em> Revolutionize shoe customization by introducing versatile charms that can attach
+                    <h4 style="font-size: 20;" class="how-it-works"> <em> Revolutionize shoe customization by introducing versatile charms that can attach
                         to any type of shoe! </em> </h4>
 
                     <br><br><br>
-                    <h1 style="font-size: 25;"> How it Works </h1>
-                    <li style = "text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;">
+                    <h1 style="font-size: 25;" class="how-it-works"> How it Works </h1>
+                    <li style = "text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;" class="how-it-works">
                         <ul>
                             <strong>Pin Back:</strong> This foundational element is inserted from the inside of the shoe, piercing through the fabric so
                             only its shaft protrudes outward. The base remains inside, securing the pin in place.
