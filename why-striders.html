@@ -36,14 +36,30 @@
         .competitive-analysis, .financials-proforma {
             margin-top: 20px;
         }
-        section .section-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
 
         section.active .section-content {
             max-height: 1000px; /* Adjust as necessary */
+        }
+
+        /* Swiper gallery styles */
+        .swiper-container {
+            width: 100%; /* Full width of the container */
+            height: auto; /* Height adjusts to content */
+            padding-left: 20px; /* Left padding */
+            padding-right: 20px; /* Right padding */
+        }
+
+        .swiper-slide img {
+            max-width: 100%; /* Ensures image is not wider than its container */
+            max-height: 400px; /* Adjust this value based on your design needs */
+            height: auto; /* Maintains aspect ratio */
+            object-fit: contain; /* Ensures the image is scaled correctly within the constraints */
+        }
+
+        @media (max-width: 768px) {
+            .swiper-slide img {
+                max-height: 200px; /* Smaller height for smaller devices */
+            }
         }
 
     </style>
@@ -51,8 +67,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Striders.</div>
-    <div class="sublogo">Striders.</div>
+        <div class="logo"><a href="main-page.html">Striders.</a></div>
         <nav>
             <ul>
                 <li><a href="main-page.html">Home</a></li>
@@ -75,34 +90,15 @@
                 <p>The Business of Communication.</p>
             </div>
             <div class="container">
-                <section id="business-model">
-                    <h2>Business Model</h2>
-                    <div class="section-content business-model">
-                        <h3>Business Model Canvas</h3>
-                        <img src="collectionassets/key partners.jpeg" alt="Business Model Canvas" class="canvas-img">
-                        <p>This section features the BMC for Striders Shoes.</p>
+                <div class="gallery-container">
+                    <div class="gallery-image">
+                        <img src="collectionassets/key partners.jpeg" alt="Key Partners" id="gallery-img">
                     </div>
-                </section>
-            
-                <section id="competitive-analysis">
-                    <h2>Competitive Analysis</h2>
-                    <div class="section-content competitive-analysis">
-                        <h3> Competitive-Analysis</h3>
-                        <img src="collectionassets/competitive.jpeg" alt="Business Model Canvas" class="canvas-img">
-                        <p>This section contains highlights from the competitive analysis.</p>
-                    </div>
-                </section>
-            
-                <section id="financials-proforma">
-                    <h2>Financials Pro Forma</h2>
-                    <div class="section-content financials-proforma">
-                        <h3> Financial Pro Forma</h3>
-                        <img src="collectionassets/pro forma.jpeg" alt="Business Model Canvas" class="canvas-img">
-                        <p>This section includes financial projections and models.</p>
-                    </div>
-                </section>
+                    <button id="prevBtn">Prev</button>
+                    <button id="nextBtn">Next</button>
+                </div>
             </div>
-        
+            <canvas id="myFinanceChart" width="400" height="400"></canvas>
         </main>
 
         <footer>
@@ -111,18 +107,101 @@
     </body>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const sections = document.querySelectorAll('section');
-        sections.forEach(section => {
-            section.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const content = this.querySelector('.section-content');
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
+        const images = [
+            "collectionassets/key partners.jpeg",
+            "collectionassets/competitive.jpeg",
+            "collectionassets/pro forma.jpeg"
+        ];
+        const captions = [
+            "Key Partners involved in our business.",
+            "Highlights from our competitive analysis.",
+            "Financial projections and models."
+        ];
+        let currentIndex = 0;
+
+        const imgElement = document.getElementById('gallery-img');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+
+        nextBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+            imgElement.alt = captions[currentIndex];
+        });
+
+        prevBtn.addEventListener('click', function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            imgElement.src = images[currentIndex];
+            imgElement.alt = captions[currentIndex];
         });
     });
     </script>
-    </html>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var ctx = document.getElementById('myFinanceChart').getContext('2d');
+        var myFinanceChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024', 'January 2025', 'February 2025', 'March 2025', 'April 2025', 'May 2025', 'June 2025', 'July 2025', 'August 2025', 'September 2025', 'October 2025', 'November 2025', 'December 2025'],
+                datasets: [{
+                    label: 'Total Expenses ($)',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    yAxisID: 'y',
+                }, {
+                    label: 'Net Profit ($)',
+                    data: [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    yAxisID: 'y1',
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        grid: {
+                            drawOnChartArea: false,
+                        },
+                    }
+                },
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                hover: {
+                    mode: 'nearest',
+                    intersect: true
+                }
+            }
+        });
+    });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    });
+    </script>
+</html>

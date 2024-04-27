@@ -31,12 +31,22 @@
             text-align: center;
         }
 
+        .centered-member {
+            width: calc(33.33% - 20px); /* Match the width of other team member bios */
+            margin: auto; /* Center the block horizontally */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         .team-member img {
-            width: 100%;
-            max-width: 200px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            transition: transform 0.3s ease;
+            width: 150px; /* Fixed width for consistency */
+            height: 150px; /* Fixed height to match the width */
+            border-radius: 50%; /* Makes the image circular */
+            object-fit: cover; /* Ensures the image covers the space without distortion */
+            margin-bottom: 10px; /* Optional: Adjusts spacing below the image */
+            transition: transform 0.3s ease; /* Smooth transition for any hover effects */
         }
 
         .team-member:hover img {
@@ -62,7 +72,6 @@
         .header {
             background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
             background-size: 400% 400%;
-            animation: moveBackground 10s ease infinite;
         }
     </style>
 
@@ -90,7 +99,7 @@
 
     <main>
         <div class="main">
-            <h1 class="typing">About Us</h1>
+            <h1>About Us</h1>
             <p>THE SOULS BEHIND YOUR SOLES</p>
             <br><br>
             <section id="about-striders" class="fade-in">
@@ -108,7 +117,7 @@
             <section id="website-team" class="fade-in">
                 <h2>Striders Team</h2><br>
                 <div class="team-members">
-                    <div class="team-member">
+                    <div class="team-member centered-member">
                         <img src="lukas.jpg" alt="Lukas Ross headshot">
                         <h3>Lukas Ross</h3>
                         <p>Founder and CEO</p>
@@ -135,7 +144,7 @@
                             stories and directed the workflow of the project. She also...</p>
                     </div>
                     <div class="team-member">
-                        <img src="ashley.jpg" alt="Ashley Chan headshot">
+                        <img src="ashleynew.jpg" alt="Ashley Chan headshot">
                         <h3>Ashley Chan</h3>
                         <p>Developer</p>
                         <p>Ashley is pursuing a B.S. in Art, Technology, and the Business of Innovation, as well as
