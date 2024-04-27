@@ -48,27 +48,19 @@ header {
 
     .logo {
         font-family: "Spicy Rice", serif;
-        color: #ffffff;
+        color: #252a34;
         font-size: 24pt;
         border: #f5e1f7 solid 3pt;
         border-radius: 15px;
         background-color: #f5e1f7;
         padding: 0px 10px;
-        padding-left: 15px;
-    }
-
-    .sublogo {
-        font-family: "Spicy Rice", serif;
-        color: #252a34;
-        font-size: 24pt;
-        position: relative;
-        left: 3px;
-
+        padding-left: 12px;
+        text-shadow: 2px 2px 0px #ffffff;
     }
 
     .logo a {
         text-decoration: none;
-        color: #ffffff;
+        color: #252a34;
     }
 
     nav ul {
@@ -137,6 +129,7 @@ header {
     
         nav ul li {
             padding: 0 15px;
+            margin: 0px;
         }
     
         .headerIcons {
@@ -194,7 +187,7 @@ header {
     
     .results-container div {
         padding: 8px;
-        cursor: pointer;
+       
     }
     
     .results-container div:hover {
