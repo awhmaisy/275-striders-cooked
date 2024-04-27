@@ -100,6 +100,8 @@ header {
         border: #f5e1f7 solid 3pt;
         border-radius: 15px;
         background-color: #f5e1f7;
+        align-items: center;
+        position: relative;
     }
 
     .headerIcons .icon {
@@ -112,32 +114,39 @@ header {
         font-size: 19pt;
     }
 
+    .headerIcons a {
+        text-decoration: none;
+    }
+
     .search-container {
-        position: absolute;
-        top: 60px; /* Adjust based on your header's height */
-        right: 10px;
-        width: 300px; /* adjusted to include the button width */
+        width: 0;
+        overflow: hidden;
+        transition: width 0.5s ease;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        box-sizing: border-box;
-        z-index: 1000;
+        border: 1px solid #f5e1f7;
+        border-radius: 10px;
+        mmargin-left: 10px;
         background: white;
-        border: 1px solid #ccc;
+        height: 40px; /* Match the height with your icons */
+        justify-content: space-between; /* This ensures the button aligns to the right */
     }
     
     .search-input {
-        flex-grow: 1;
-        padding: 8px 10px;
+        flex-grow: 1; /* Allows the input to take up the available space */
         border: none;
-        border-right: 1px solid #ccc; /* visually separates the input from the button */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 100%;
+        padding: 0 10px; /* Adds padding inside the input on the left */
     }
     
     .search-button {
-        padding: 8px 15px;
-        border: none;
         background-color: #ef5fb3;
         color: white;
-        cursor: pointer;
+        padding: 15px 15px; /* Adjust padding for visual appeal */
+        border: 1px solid #ccc;
     }
     
     .search-button:hover {
@@ -148,11 +157,10 @@ header {
         position: absolute;
         top: 100%;
         left: 0;
-        right: 0;
+        width: 100%;
         background: white;
-        border: 1px solid #ccc;
-        display: none; /* Start hidden */
-        z-index: 1001;
+        display: none; /* Hide initially */
+        z-index: 5; /* Ensure it's above other content */
     }
     
     .results-container div {
@@ -163,3 +171,4 @@ header {
     .results-container div:hover {
         background-color: #f0f0f0;
     }
+

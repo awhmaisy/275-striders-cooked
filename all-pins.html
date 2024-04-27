@@ -26,7 +26,12 @@
             </ul>
         </nav>
         <div class="headerIcons">
-            <span class="icon">🔍</span>
+            <div id="search-container" class="search-container">
+                <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
+                <button id="search-button" class="search-button">Go</button>
+                <div id="results-container" class="results-container"></div>
+            </div>
+            <span class="icon" onclick="toggleSearch()">🔍</span>
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
             <span class="icon">👤</span>
         </div>
@@ -164,5 +169,8 @@
 
 
     </body>
+
+    <script src="search.js"></script>
+
     </html>
 
