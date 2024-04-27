@@ -1,9 +1,9 @@
 function toggleSearch() {
     var searchContainer = document.getElementById('search-container');
-    if (searchContainer.style.width === '250px') {
+    if (searchContainer.style.width === '300px') {
         searchContainer.style.width = '0';
     } else {
-        searchContainer.style.width = '300px'; // Adjusted to accommodate the button
+        searchContainer.style.width = '300px';
         document.getElementById('search-input').focus();
     }
 }
@@ -47,13 +47,5 @@ document.getElementById('search-button').addEventListener('click', function() {
         resultsContainer.style.display = 'block';
     } else {
         resultsContainer.style.display = 'none';
-    }
-});
-
-// Optional: Handle 'Enter' key to trigger search button click
-document.getElementById('search-input').addEventListener('keydown', function(event) {
-    if (event.key === "Enter") {
-        event.preventDefault(); // Prevent form submission
-        document.getElementById('search-button').click();
     }
 });

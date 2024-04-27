@@ -116,28 +116,43 @@ header {
         position: absolute;
         top: 60px; /* Adjust based on your header's height */
         right: 10px;
-        width: 0;
-        overflow: hidden;
-        transition: width 0.5s ease;
-        z-index: 1000; /* Ensure it's above other content */
+        width: 300px; /* adjusted to include the button width */
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 1000;
         background: white;
         border: 1px solid #ccc;
     }
     
     .search-input {
-        border: none;
+        flex-grow: 1;
         padding: 8px 10px;
-        width: 100%;
-        box-sizing: border-box;
+        border: none;
+        border-right: 1px solid #ccc; /* visually separates the input from the button */
+    }
+    
+    .search-button {
+        padding: 8px 15px;
+        border: none;
+        background-color: #ef5fb3;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .search-button:hover {
+        background-color: #d491af;
     }
     
     .results-container {
         position: absolute;
         top: 100%;
-        width: 100%;
+        left: 0;
+        right: 0;
         background: white;
         border: 1px solid #ccc;
-        display: none;
+        display: none; /* Start hidden */
+        z-index: 1001;
     }
     
     .results-container div {
@@ -148,18 +163,3 @@ header {
     .results-container div:hover {
         background-color: #f0f0f0;
     }
-
-    .search-button {
-        padding: 8px 10px;
-        border: none;
-        background-color: #ef5fb3;
-        color: white;
-        cursor: pointer;
-        border-left: 1px solid #ccc; /* visually connects the button with the input */
-    }
-    
-    .search-button:hover {
-        background-color: #d491af;
-    }
-    
-    
