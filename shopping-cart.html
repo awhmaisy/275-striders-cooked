@@ -169,14 +169,15 @@
     }
 
     function clearCart() {
-      localStorage.removeItem('cartItems'); // Remove cart items from localStorage
-      displayCartItemsAndCalculateTotal(); // Update the display
+      localStorage.removeItem('cartItems');
+      displayCartItemsAndCalculateTotal(); 
     }
 
     document.getElementById('clear-cart').addEventListener('click', clearCart);
     document.addEventListener('DOMContentLoaded', displayCartItemsAndCalculateTotal);
+    let products = [];
 
-    
+
   </script>
 
 </body>
