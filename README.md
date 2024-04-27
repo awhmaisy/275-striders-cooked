@@ -1,6 +1,6 @@
 **test readme**
 striders team / acad 275 / content build
-# project name: striders team
+# teal design firm: a project for ACAD-275, a course at USC's iovine and young academy.
 
 welcome to the striders team project! our mission is to revolutionize the way you interact with your footwear through innovative customization. dive into a world where your shoes are not just an accessory, but a canvas for your personal expression.
 
