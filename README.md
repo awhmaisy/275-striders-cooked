@@ -1,7 +1,6 @@
 **test readme**
 striders team / acad 275 / content build
-# teal design firm
-## a project for ACAD-275, a course at USC's iovine and young academy.
+# teal design firm: a project for ACAD-275, a course at USC's iovine and young academy.
 
 welcome to the striders team project! our mission is to revolutionize the way you interact with your footwear through innovative customization. dive into a world where your shoes are not just an accessory, but a canvas for your personal expression.
 
@@ -9,26 +8,24 @@ this site was made by the striders team for the acad-275 course at usc's iovine 
 
 ## skills learned and used
 
-- [introduction](#introduction)
-- [features](#features)
-- [getting started](#getting-started)
-  - [prerequisites](#prerequisites)
-  - [installation](#installation)
-- [usage](#usage)
-- [contributing](#contributing)
-- [credits](#credits)
-- [license](#license)
-- [contact](#contact)
+- responsive design for device sizes and layouts
+- motion graphics
+- animation sequences
+- interactive photo galleries
+- interactive JavaScript chart (find this on the "why striders" page! tristan created a pro forma spreadsheet, and mei utilized chart.js to display the relationship between total expenses and net profits.)
+- major and medium scripting routines
 
 ## introduction
 
 the striders team project is part of the acad 275 course, focusing on building content that stands out. our project allows users to customize their shoes with a wide range of charms and accessories, making each pair unique and personal.
 
+striders shoes is a project architected by lukas ross, a BFA student at USC's roski school of art and design. ross paired up with the course to create an assignment for us to exercise the knowledge we learned in class! we've formatted the site to reflect the arts of design and visual communication, the introductory technology of coding, scripting, and animation, and the business of startup finances and team management.
+
 ## features
 
-- **customization galore**: choose from hundreds of charms to add a personal touch to your footwear.
+- **collections page**: choose from hundreds of charms to add a personal touch to your footwear!
 - **interactive design tool**: use our web-based tool to visualize your customizations in real-time.
-- **community designs**: get inspired by designs created by the community and vote for your favorites.
+- **visual design**: ashley, sinchana and mari used CSS to create the visual design for the website, based on the customer.
 
 ## getting started
 
@@ -42,19 +39,19 @@ the striders team project is part of the acad 275 course, focusing on building c
 
 our project is powered by a dedicated team of innovators and creators. get to know us a bit better!
 
-### :smiley: name 1
-<img src="teamassets/mari.jpeg" width="100" alt="Name 1"/>
+### :smiley: mei higashi
+<img src="teamassets/mei.jpg" width="100" alt="Name 1"/>
 
 - **Short Bio**: A brief description of Name 1. This could include interests, what they bring to the project, or fun facts.
 - **Role**: What Name 1 does on the team.
 
-### :sunglasses: name 2
-![name 2](path/to/photo2.jpg)
+### :sunglasses: mari edler
+<img src="teamassets/mei.jpg" width="100" alt="Name 1"/>
 - **short bio**: a brief description of name 2. this could include their background, what drives them, or hobbies they enjoy.
 - **role**: what name 2 does on the team.
 
-### :nerd_face: name 3
-![name 3](path/to/photo3.jpg)
+### :nerd_face: ashley chan
+<img src="teamassets/ashleynew.jpg" width="100" alt="Ashley Chan headshot"/>
 - **short bio**: a brief description of name 3. highlight their expertise, passions, or contributions to the project.
 - **role**: what name 3 does on the team.
 
