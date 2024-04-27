@@ -43,8 +43,9 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 
 ### :smiley: name 1
 <img src="teamassets/mari.jpeg" width="100" alt="Name 1"/>
-**short bio**: a brief description of name 1. this could include interests, what they bring to the project, or fun facts.
-**role**: what name 1 does on the team.
+
+- **Short Bio**: A brief description of Name 1. This could include interests, what they bring to the project, or fun facts.
+- **Role**: What Name 1 does on the team.
 
 ### :sunglasses: name 2
 ![name 2](path/to/photo2.jpg)
