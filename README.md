@@ -46,7 +46,7 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 - **Role**: What Name 1 does on the team.
 
 ### :sunglasses: mari edler
-<img src="teamassets/mei.jpg" width="100" alt="Name 1"/>
+<img src="teamassets/mei.JPG" width="100" alt="Name 1"/>
 - **short bio**: a brief description of name 2. this could include their background, what drives them, or hobbies they enjoy.
 - **role**: what name 2 does on the team.
 
