@@ -8,42 +8,45 @@ function toggleSearch() {
     }
 }
 
+var pins = [
+    { name: "Cat", page: "collectionanimal.html" },
+    { name: "Unicorn", page: "collectionanimal.html" },
+    { name: "Ladybug", page: "collectionanimal.html" },
+    { name: "Butterfly", page: "collectionanimal.html" },
+    { name: "Dinosaur", page: "collectionanimal.html" },
+    { name: "Paw Print", page: "collectionanimal.html" },
+    { name: "Llama", page: "collectionanimal.html" },
+    { name: "Rick", page: "collectioncartoon.html" },
+    { name: "Morty", page: "collectioncartoon.html" },
+    { name: "Buzz Lightyear", page: "collectioncartoon.html" },
+    { name: "Minnie Mouse", page: "collectioncartoon.html" },
+    { name: "Snoopy", page: "collectioncartoon.html" },
+    { name: "Woodstock", page: "collectioncartoon.html" },
+    { name: "Yoda", page: "collectioncartoon.html" },
+    { name: "Spongebob", page: "collectioncartoon.html" }
+];
+
 document.getElementById('search-button').addEventListener('click', function() {
-    const input = document.getElementById('search-input');
-    const query = input.value;
-    const resultsContainer = document.getElementById('results-container');
+    var input = document.getElementById('search-input');
+    var query = input.value.toLowerCase();
+    var resultsContainer = document.getElementById('results-container');
+    resultsContainer.innerHTML = ''; // Clear previous results
 
-    if (!query) {
-        resultsContainer.style.display = 'none';
-        return;
-    }
-
-    const pages = [
-        { name: "Home", url: "main-page.html" },
-        { name: "All Pins", url: "all-pins.html" },
-        { name: "Collections", url: "collections.html" },
-        { name: "Animal Collection", url: "collectionanimal.html" },
-        { name: "Cartoon Collection", url: "collectioncartoonn.html" },
-        { name: "Letter Collection", url: "collectionletter.html" },
-        { name: "Retro Collection", url: "collectionretro.html" },
-        { name: "Sports Collection", url: "collectionsports.html" },
-        { name: "University Collection", url: "collectionuniversity.html" },
-        { name: "Why Striders?", url: "why-striders.html" },
-        { name: "About Us", url: "about-us.html" }
-    ];
-
-    const filteredResults = pages.filter(page => page.name.toLowerCase().includes(query.toLowerCase()));
-
-    if (filteredResults.length > 0) {
-        resultsContainer.innerHTML = '';
-        filteredResults.forEach(page => {
-            const div = document.createElement('div');
-            div.textContent = page.name;
-            div.addEventListener('click', () => {
-                window.location.href = page.url;
-            });
+    var found = false;
+    pins.forEach(function(pin) {
+        if (pin.name.toLowerCase().includes(query)) {
+            var div = document.createElement('div');
+            div.textContent = pin.name + ' - ' + pin.page;
+            div.style.cursor = 'pointer';
+            div.onclick = function() {
+                window.location.href = pin.page;
+            };
             resultsContainer.appendChild(div);
-        });
+            found = true;
+        }
+    });
+
+    if (found) {
         resultsContainer.style.display = 'block';
     } else {
         resultsContainer.style.display = 'none';
