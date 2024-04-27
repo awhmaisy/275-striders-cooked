@@ -9,6 +9,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
 
+        #teams {
+            background-color: #ffffff;
+        }
+
         #about-striders {
             width: 60%;
             margin: auto;
@@ -16,6 +20,7 @@
 
         #website-team {
             margin: auto 25px;
+            
         }
 
         .team-members {
@@ -27,7 +32,7 @@
 
         .team-member {
             width: calc(33.33% - 20px);
-            margin-bottom: 20px;
+            margin-bottom: 40px;
             text-align: center;
         }
 
@@ -41,16 +46,15 @@
         }
 
         .team-member img {
-            width: 150px; /* Fixed width for consistency */
-            height: 150px; /* Fixed height to match the width */
-            border-radius: 50%; /* Makes the image circular */
-            object-fit: cover; /* Ensures the image covers the space without distortion */
-            margin-bottom: 10px; /* Optional: Adjusts spacing below the image */
-            transition: transform 0.3s ease; /* Smooth transition for any hover effects */
+            width: 100%;
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
         }
 
         .team-member:hover img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         hr {
@@ -111,10 +115,12 @@
                     Striders, every pair of shoes becomes a canvas for self-expression, allowing individuals to
                     transform their footwear into something extremely unique.</p>
             </section>
-
             <br><br><br>
-            <hr><br><br>
+            <div id="teams">
+            
+            <br><br>
             <section id="website-team" class="fade-in">
+                
                 <h2>Striders Team</h2><br>
                 <div class="team-members">
                     <div class="team-member centered-member">
@@ -130,10 +136,10 @@
             </section>
 
 
-            <br><br>
+            <br>
             <hr><br><br>
             <section id="website-team" class="fade-in">
-                <h2>Website Team</h2><br>
+                <h2>Website Team</h2><br><br>
                 <div class="team-members">
                     <div class="team-member">
                         <img src="mari.jpeg" alt="Mari Edler headshot">
@@ -197,6 +203,7 @@
                     </div>
                 </div>
             </section>
+        </div>
         </div>
     </main>
 

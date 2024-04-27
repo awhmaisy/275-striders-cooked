@@ -50,9 +50,10 @@ header {
         color: #ffffff;
         font-size: 24pt;
         border: #f5e1f7 solid 3pt;
-        border-radius: 10px;
+        border-radius: 15px;
         background-color: #f5e1f7;
         padding: 0px 10px;
+        padding-left: 15px;
     }
 
     .sublogo {
@@ -60,7 +61,8 @@ header {
         color: #252a34;
         font-size: 24pt;
         position: absolute;
-        left: 28px;
+        left: 33px;
+
     }
 
     .logo a {
@@ -72,7 +74,7 @@ header {
         list-style: none;
         display: flex;
         border: #f5e1f7 solid 3pt;
-        border-radius: 10px;
+        border-radius: 15px;
         background-color: #f5e1f7;
         padding: 10px 10px;
     }
@@ -96,7 +98,7 @@ header {
     .headerIcons {
         display: flex;
         border: #f5e1f7 solid 3pt;
-        border-radius: 10px;
+        border-radius: 15px;
         background-color: #f5e1f7;
     }
 
