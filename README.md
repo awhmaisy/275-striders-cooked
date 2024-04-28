@@ -14,8 +14,7 @@ visit the site here: https://medler.webdev.iyaserver.com/acad275/Striders/main-p
 - responsive design for device sizes and layouts
 - motion graphics
 - animation sequences
-- interactive photo galleries
-- interactive JavaScript chart (find this on the "why striders" page! tristan created a pro forma spreadsheet, and mei utilized chart.js to display the relationship between total expenses and net profits.)
+- interactive scripting for photos, shopping, etc.
 - major and medium scripting routines
 
 ## introduction
@@ -26,9 +25,10 @@ striders shoes is a project architected by lukas ross, a BFA student at USC's ro
 
 ## features
 
-- **collections page**: choose from hundreds of charms to add a personal touch to your footwear!
-- **interactive design tool**: use our web-based tool to visualize your customizations in real-time.
+- **collections page**: ashley built an amazing database of pins available for purchase!
+- **interactive design tool**: tristan created a tool to visualize your customizations in real-time.
 - **visual design**: ashley, sinchana and mari used CSS to create the visual design for the website, based on the customer.
+- **interactive JavaScript chart**: find this on the "why striders" page! tristan and giovanni created a pro forma spreadsheet, and mei utilized chart.js to display the relationship between total expenses and net profits.
 
 ## getting started
 
