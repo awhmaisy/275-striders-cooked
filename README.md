@@ -30,14 +30,6 @@ striders shoes is a project architected by lukas ross, a BFA student at USC's ro
 - **visual design**: ashley, sinchana and mari used CSS to create the visual design for the website, based on the customer.
 - **interactive JavaScript chart**: find this on the "why striders" page! tristan and giovanni created a pro forma spreadsheet, and mei utilized chart.js to display the relationship between total expenses and net profits.
 
-## getting started
-
-### prerequisites
-
-- a modern web browser.
-- internet connection.
-- an excitement to decorate your shoes!
-
 ## meet the team
 
 our project is powered by a dedicated team of innovators and creators. get to know us a bit better!
