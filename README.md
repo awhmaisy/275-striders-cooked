@@ -47,7 +47,7 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 
 - **short bio**: Mei is in her first year of training at USC's Iovine and Young Academy. She is equipped with 8+ years in social media, with expertise in branding, strategic media and PR and growth strategy consulting. Previously affiliated with ACCD, Wallis Annenberg Center for Performing Arts, and USC Athletics.
 - **role**: PM and copy developer
-- **link**: reach out to mei on [linkedin](https://www.linkedin.com/in/awhmaisy/), [instagram](https://www.instagram.com/awhmaisy/). join her in yapping on [twitter](https://twitter.com/maisy__j) and [blog](https://awhmaisy.com/) too!
+- **link**: reach out to mei on [linkedin](https://www.linkedin.com/in/awhmaisy/) or [instagram](https://www.instagram.com/awhmaisy/). join her in yapping on [twitter](https://twitter.com/maisy__j) and [blog](https://awhmaisy.com/) too!
 
 ### :space_invader: mari edler
 <img src="teamassets/mari.jpeg" width="100" alt="Mari Edler headshot"/>
