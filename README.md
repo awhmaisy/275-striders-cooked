@@ -51,19 +51,27 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 ### :sunglasses: mari edler
 <img src="teamassets/mari.jpeg" width="100" alt="Name 1"/>
 
-- **short bio**: a brief description of name 2. this could include their background, what drives them, or hobbies they enjoy.
-- **role**: what name 2 does on the team.
+- **short bio**: Mari's passions and skills lie in art & design, production & organizational management,
+                            public speaking, operations, and marketing strategy. She is experienced in composing visual
+                            stories and directed the telling of the Striders Shoes story.
+- **mari's webstie**: [here](https://www.mariedler.com/)
 
 ### :nerd_face: ashley chan
 <img src="teamassets/ashleynew.jpg" width="100" alt="Ashley Chan headshot"/>
 
-- **short bio**: a brief description of name 3. highlight their expertise, passions, or contributions to the project.
+- **short bio**: Ashley is pursuing a B.S. in Art, Technology, and the Business of Innovation, as well as
+                            minors in Communication Design and Marketing. As a creative, she finds satisfaction in
+                            bringing creative projects to life from conception to completion, and she is able to deliver
+                            high quality work under pressure. With a specialty in research and market analysis as well
+                            as a background in fine art, Ashley is currently building a career in the marketing and
+                            production industries.
 - **role**: what name 3 does on the team.
 
-### :star_struck: name 4
+### :star_struck: tristan wilcher
 ![name 4](path/to/photo4.jpg)
-- **short bio**: a brief description of name 4. this might focus on their creative process, what inspires them, or achievements.
-- **role**: what name 4 does on the team.
+- **short bio**: tristan brings a passion for books, production and beat-making, and music business to the USC
+                            Iovine and Young Academy. If he’s not reading or making films, you can find him in the
+                            studio. He has experience directing and working with creatives.
 
 ### :partying_face: name 5
 ![name 5](path/to/photo5.jpg)
