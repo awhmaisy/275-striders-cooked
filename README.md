@@ -42,27 +42,27 @@ striders shoes is a project architected by lukas ross, a BFA student at USC's ro
 
 our project is powered by a dedicated team of innovators and creators. get to know us a bit better!
 
-### :smiley: mei higashi
+### :ribbon: mei higashi
 <img src="teamassets/mei.JPG" width="100" alt="Mei Higashi headshot"/>
 
 - **short bio**: Mei is in her first year of training at USC's Iovine and Young Academy. She is equipped with 8+ years in social media, with expertise in branding, strategic media and PR and growth strategy consulting. Previously affiliated with ACCD, Wallis Annenberg Center for Performing Arts, and USC Athletics.
 - **role**: PM and copy developer
 
-### :sunglasses: mari edler
+### :space_invader: mari edler
 <img src="teamassets/mari.jpeg" width="100" alt="Mari Edler headshot"/>
 
 - **short bio**: Mari's passions and skills lie in art & design, production & organizational management, public speaking, operations, and marketing strategy. She is experienced in composing visual stories and directed the telling of the Striders Shoes story.
 - **role**: developer and PM
-- **mari's webstie**: [here](https://www.mariedler.com/)
+- **link**: check out mari's portfolio and passions on her website [here](https://www.mariedler.com/)
 
 ### :nerd_face: ashley chan
 <img src="teamassets/ashleynew.jpg" width="100" alt="Ashley Chan headshot"/>
 
 - **short bio**: Ashley is pursuing a B.S. in Art, Technology, and the Business of Innovation, as well as minors in Communication Design and Marketing. As a creative, she finds satisfaction in bringing creative projects to life from conception to completion, and she is able to deliver high quality work under pressure. With a specialty in research and market analysis as well as a background in fine art, Ashley is currently building a career in the marketing and production industries.
 - **role**: developer and visual designer
-- **ashley's podcast**: check it out on spotify [here!](https://open.spotify.com/show/5uvFoL0WrCc0b35JF1N7vd?si=d73cb68fce25479d)
+- **link**: stream the 'life like' podcast on spotify [here,](https://open.spotify.com/show/5uvFoL0WrCc0b35JF1N7vd?si=d73cb68fce25479d) and connect with ashley [here](https://www.linkedin.com/in/ashley-chan-829b51297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
-### :star_struck: tristan wilcher
+### :movie_camera: tristan wilcher
 <img src="teamassets/tristan.jpg" width="100" alt="Tristan Wilcher headshot">
 
 - **short bio**: tristan brings a passion for books, production and beat-making, and music business to the USC Iovine and Young Academy. If he’s not reading or making films, you can find him in the studio. He has experience directing and working with creatives.
@@ -72,9 +72,10 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 <img src="teamassets/sinchana.jpg" width="100" alt="Sinchana Nama headshot">
 
 - **short bio**: Sinchana studies at the Jimmy Iovine and Andre Young Academy. She is passionate about utilizing technology to foster human connection and creativity through an emphasis on applicative artificial intelligence, human-centered design, and the intersectionality between technology, visual and auditory art, and health innovation.
-- **role**: developer and presenter
+- **role**: developer and presenter 
+- **linkedin**: connect with sinchana on linkedin [here](https://www.linkedin.com/in/snama)
 
-### :muscle: giovanni goree
+### :musical_note: giovanni goree
 <img src="teamassets/giovanni.jpg" width="100" alt="Giovanni Goree headshot">
 
 - **short bio**: a freshman majoring at IYA and minor in recorded music. Aside from being a student, I'm a full-time musician and the owner of clothing brand, “Until Tomorrow.” I have worked on numerous startup projects with my favorite up to date being “Daisy,” an AI music app developed by IYA’s own Ben Taft. My involvement with Striders has been an intriguing one! I have worked on constructing the investors page in a clear and concise way that represents who we are at Striders and why YOU should believe not only our company, but our message!
