@@ -47,20 +47,21 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 
 - **short bio**: Mei is in her first year of training at USC's Iovine and Young Academy. She is equipped with 8+ years in social media, with expertise in branding, strategic media and PR and growth strategy consulting. Previously affiliated with ACCD, Wallis Annenberg Center for Performing Arts, and USC Athletics.
 - **role**: PM and copy developer
+- **link**: reach out to mei on [linkedin](https://www.linkedin.com/in/awhmaisy/), [instagram](https://www.instagram.com/awhmaisy/). join her in yapping on [twitter](https://twitter.com/maisy__j) and [blog](https://awhmaisy.com/) too!
 
 ### :space_invader: mari edler
 <img src="teamassets/mari.jpeg" width="100" alt="Mari Edler headshot"/>
 
 - **short bio**: Mari's passions and skills lie in art & design, production & organizational management, public speaking, operations, and marketing strategy. She is experienced in composing visual stories and directed the telling of the Striders Shoes story.
 - **role**: developer and PM
-- **link**: check out mari's portfolio and passions on her website [here](https://www.mariedler.com/)
+- **link**: check out mari's portfolio and passions on her website [here!](https://www.mariedler.com/)
 
 ### :nerd_face: ashley chan
 <img src="teamassets/ashleynew.jpg" width="100" alt="Ashley Chan headshot"/>
 
 - **short bio**: Ashley is pursuing a B.S. in Art, Technology, and the Business of Innovation, as well as minors in Communication Design and Marketing. As a creative, she finds satisfaction in bringing creative projects to life from conception to completion, and she is able to deliver high quality work under pressure. With a specialty in research and market analysis as well as a background in fine art, Ashley is currently building a career in the marketing and production industries.
 - **role**: developer and visual designer
-- **link**: stream the 'life like' podcast on spotify [here,](https://open.spotify.com/show/5uvFoL0WrCc0b35JF1N7vd?si=d73cb68fce25479d) and connect with ashley [here](https://www.linkedin.com/in/ashley-chan-829b51297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
+- **link**: stream the 'life like' podcast on spotify [here,](https://open.spotify.com/show/5uvFoL0WrCc0b35JF1N7vd?si=d73cb68fce25479d) and connect with ashley [here!](https://www.linkedin.com/in/ashley-chan-829b51297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 ### :movie_camera: tristan wilcher
 <img src="teamassets/tristan.jpg" width="100" alt="Tristan Wilcher headshot">
