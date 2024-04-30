@@ -1,5 +1,6 @@
 function toggleSearch() {
     var searchContainer = document.getElementById('search-container');
+    console.log("Search Toggled");
     if (searchContainer.style.width === '300px') {
         searchContainer.style.width = '0';
     } else {
@@ -60,6 +61,7 @@ var pins = [
 
 document.getElementById('search-button').addEventListener('click', function() {
     var input = document.getElementById('search-input');
+    console.log("Input: " + input.value);
     var query = input.value.toLowerCase();
     var resultsContainer = document.getElementById('results-container');
     resultsContainer.innerHTML = '';
@@ -69,7 +71,6 @@ document.getElementById('search-button').addEventListener('click', function() {
         if (pin.name.toLowerCase().includes(query)) {
             var div = document.createElement('div');
             div.textContent = pin.name + ' - ' + pin.pageName;
-            div.style.cursor = 'pointer';
             div.onclick = function() {
                 window.location.href = pin.page;
                 document.getElementById('search-input').value = '';
@@ -77,12 +78,15 @@ document.getElementById('search-button').addEventListener('click', function() {
             };
             resultsContainer.appendChild(div);
             found = true;
+            console.log("Pin Found");
         }
     });
 
     if (found) {
+        console.log("Pin Displayed");
         resultsContainer.style.display = 'block';
     } else {
+        console.log("Pin NOT Found");
         resultsContainer.style.display = 'none';
     }
 });
