@@ -27,13 +27,15 @@
         </nav>
         <div class="headerIcons">
             <div id="search-container" class="search-container">
-                <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
-                <button id="search-button" class="search-button">Go</button>
+                <div id="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
+                    <button id="search-button" class="search-button">Go</button>
+                </div>
                 <div id="results-container" class="results-container"></div>
             </div>
             <span class="icon" onclick="toggleSearch()">🔍</span>
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
-            <span class="icon">👤</span>
+            <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
         
     </header>
@@ -48,49 +50,55 @@
 
 <section class="product-list">
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'A', 6, 'collectionassets/aletter.avif', 'Product 1')">🤍</div>
         <img src="collectionassets/aletter.avif" alt="Product 1">
         <h2>A</h2>
         <p>$6.00</p>
         <button onclick="addToCart('A', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'M', 6, 'collectionassets/mletter.avif', 'Product 2')">🤍</div>
         <img src="collectionassets/mletter.avif" alt="Product 2">
         <h2>M</h2>
         <p>$6.00</p>
         <button onclick="addToCart('M', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'E', 6, 'collectionassets/eletter.avif', 'Product 3')">🤍</div>
         <img src="collectionassets/eletter.avif" alt="Product 3">
         <h2>E</h2>
         <p>$6.00</p>
         <button onclick="addToCart('E', 6)">Add to Cart</button>
     </div>
-
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'J', 6, 'collectionassets/jletter.avif', 'Product 4')">🤍</div>
         <img src="collectionassets/jletter.avif" alt="Product 4">
         <h2>J</h2>
         <p>$6.00</p>
         <button onclick="addToCart('J', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'H', 6, 'collectionassets/h letter.avif', 'Product 5')">🤍</div>
         <img src="collectionassets/h letter.avif" alt="Product 5">
         <h2>H</h2>
         <p>$6.00</p>
         <button onclick="addToCart('H', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'O', 6, 'collectionassets/oletter.avif', 'Product 6')">🤍</div>
         <img src="collectionassets/oletter.avif" alt="Product 6">
         <h2>O</h2>
         <p>$6.00</p>
         <button onclick="addToCart('O', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'W', 6, 'collectionassets/wletter.avif', 'Product 7')">🤍</div>
         <img src="collectionassets/wletter.avif" alt="Product 7">
         <h2>W</h2>
         <p>$6.00</p>
@@ -122,5 +130,6 @@
 </body>
 
 <script src="search.js"></script>
+<script src="wishlist.js"></script>
 
 </html>

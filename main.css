@@ -26,6 +26,11 @@ body {
     color: #252a34;
 }
 
+button {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+}
+
 footer {
     background-color: #252a34;
     color: #ffffff;

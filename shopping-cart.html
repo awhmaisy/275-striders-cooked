@@ -37,15 +37,18 @@
 
     button {
       padding: 5px 10px;
-      background-color: lightpink;
+      background-color: #f5c2e7;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
+      transition: .3s;
       
     }
 
     button:hover {
-      background-color: lightpink;
+      background-color: #f5e1f7;
+      border-radius: 7px;
+
     }
 
     .cart {
@@ -73,14 +76,16 @@
     </nav>
     <div class="headerIcons">
       <div id="search-container" class="search-container">
-          <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
-          <button id="search-button" class="search-button">Go</button>
-          <div id="results-container" class="results-container"></div>
-      </div>
-      <span class="icon" onclick="toggleSearch()">🔍</span>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
+            <button id="search-button" class="search-button">Go</button>
+        </div>
+        <div id="results-container" class="results-container"></div>
+    </div>
+    <span class="icon" onclick="toggleSearch()">🔍</span>
       <span class="icon"><a href="shopping-cart.html">🛒</a></span>
-      <span class="icon">👤</span>
-  </div>
+      <span class="icon"><a href="wishlist.html">🩷</a></span>
+    </div>
   
   </header>
 
@@ -109,7 +114,7 @@
   </div>
 
   <footer>
-    <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
+    <p>&copy; 2024 Striders. All rights reserved.</p>
   </footer>
   <script>
     function addToCart(productName, price) {

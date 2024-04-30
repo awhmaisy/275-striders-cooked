@@ -27,13 +27,15 @@
         </nav>
         <div class="headerIcons">
             <div id="search-container" class="search-container">
-                <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
-                <button id="search-button" class="search-button">Go</button>
+                <div id="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
+                    <button id="search-button" class="search-button">Go</button>
+                </div>
                 <div id="results-container" class="results-container"></div>
             </div>
             <span class="icon" onclick="toggleSearch()">🔍</span>
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
-            <span class="icon">👤</span>
+            <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
         
     </header>
@@ -48,54 +50,61 @@
 
 <section class="product-list">
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Retro Pack', 6, 'collectionassets/retropack.jpeg', 'Product 1')">🤍</div>
         <img src="collectionassets/retropack.jpeg" alt="Product 1">
         <h2>Retro Pack</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Retro Pack', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Hang Loose', 6, 'collectionassets/hanglooe.avif', 'Product 2')">🤍</div>
         <img src="collectionassets/hanglooe.avif" alt="Product 2">
         <h2>Hang Loose</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Hang Loose', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, '70s Heart Chain', 6, 'collectionassets/heartchain.avif', 'Product 3')">🤍</div>
         <img src="collectionassets/heartchain.avif" alt="Product 3">
         <h2>70s Heart Chain</h2>
         <p>$6.00</p>
         <button onclick="addToCart('70s Heart Chain', 6)">Add to Cart</button>
     </div>
-
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Disco Cherries', 6, 'collectionassets/discocherrie.avif', 'Product 4')">🤍</div>
         <img src="collectionassets/discocherrie.avif" alt="Product 4">
         <h2>Disco Cherries</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Disco Cherries', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Festival Daisy Icon', 6, 'collectionassets/festivaldaisy.avif', 'Product 5')">🤍</div>
         <img src="collectionassets/festivaldaisy.avif" alt="Product 5">
         <h2>Festival Daisy Icon</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Festival Daisy Icon', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Heart Sunglasses', 6, 'collectionassets/sunnies.avif', 'Product 6')">🤍</div>
         <img src="collectionassets/sunnies.avif" alt="Product 6">
         <h2>Heart Sunglasses</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Heart Sunglasses', 6)">Add to Cart</button>
     </div>
-
+    
     <div class="product">
+        <div class="heart" onclick="toggleHeart(event, 'Beaded Strap Chain', 6, 'collectionassets/beadchain.avif', 'Product 7')">🤍</div>
         <img src="collectionassets/beadchain.avif" alt="Product 7">
         <h2>Beaded Strap Chain</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Beaded Strap Chain', 6)">Add to Cart</button>
     </div>
+    
 
 </section>
 
@@ -122,5 +131,6 @@
 </body>
 
 <script src="search.js"></script>
+<script src="wishlist.js"></script>
 
 </html>
