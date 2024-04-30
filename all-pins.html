@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Striders. All Pins</title>
-    
+
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="collections.css">
 
@@ -12,6 +12,7 @@
     </style>
 
 </head>
+
 <body>
     <header>
         <div class="logo"><a href="main-page.html">Striders.</a></div>
@@ -38,352 +39,384 @@
             <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
     </header>
-   
-        <main>
-            <div class="main">
-                <h1>All Pins</h1>
-                <p>STRIDE WITH STYLE</p>
-                
+
+    <main>
+        <div class="main">
+            <h1>All Pins</h1>
+            <p>STRIDE WITH STYLE</p>
+
+        </div>
+    </main>
+
+    <section class="product-list">
+
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Cat', 6, 'collectionassets/blackcat.avif', 'Product 1')">🤍
             </div>
-        </main>
+            <img src="collectionassets/blackcat.avif" alt="Product 1">
+            <h2>Cat</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Cat', 6)">Add to Cart</button>
+        </div>
 
-        <section class="product-list">
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Unicorn', 6, 'collectionassets/unicorn.avif', 'Product 2')">
+                🤍</div>
+            <img src="collectionassets/unicorn.avif" alt="Product 2">
+            <h2>Unicorn</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Unicorn', 6)">Add to Cart</button>
+        </div>
 
-            <div class="product">
-        <img src="collectionassets/blackcat.avif" alt="Product 1">
-        <h2>Cat</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Cat', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Ladybug', 6, 'collectionassets/ladybug.avif', 'Product 3')">
+                🤍</div>
+            <img src="collectionassets/ladybug.avif" alt="Product 3">
+            <h2>Ladybug</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Ladybug', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/unicorn.avif" alt="Product 2">
-        <h2>Unicorn</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Unicorn', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Butterfly', 6, 'collectionassets/butterfly.avif', 'Product 4')">🤍</div>
+            <img src="collectionassets/butterfly.avif" alt="Product 4">
+            <h2>Butterfly</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Butterfly', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/ladybug.avif" alt="Product 3">
-        <h2>Ladybug</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Ladybug', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Dinosaur', 6, 'collectionassets/dino.avif', 'Product 5')">🤍
+            </div>
+            <img src="collectionassets/dino.avif" alt="Product 5">
+            <h2>Dinosaur</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Dinosaur', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/butterfly.avif" alt="Product 4">
-        <h2>Butterfly</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Butterfly', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Paw Print', 6, 'collectionassets/pawprint.avif', 'Product 6')">🤍</div>
+            <img src="collectionassets/pawprint.avif" alt="Product 6">
+            <h2>Paw Print</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Paw Print', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/dino.avif" alt="Product 5">
-        <h2>Dinosaur</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Dinosaur', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Llama', 6, 'collectionassets/llama.avif', 'Product 7')">🤍
+            </div>
+            <img src="collectionassets/llama.avif" alt="Product 7">
+            <h2>Llama</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Llama', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/pawprint.avif" alt="Product 6">
-        <h2>Paw Print</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Paw Print', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/rick.avif" alt="Product 1">
+            <h2>Rick</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Rick', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/llama.avif" alt="Product 7">
-        <h2>Llama</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Llama', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/morty.avif" alt="Product 2">
+            <h2>Morty</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Morty', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/rick.avif" alt="Product 1">
-        <h2>Rick</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Rick', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/buzzlight.avif" alt="Product 3">
+            <h2>Buzz Lightyear</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Buzz Lightyear', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/morty.avif" alt="Product 2">
-        <h2>Morty</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Morty', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/minnie.avif" alt="Product 4">
+            <h2>Minnie Mouse</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Minnie Mouse', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/buzzlight.avif" alt="Product 3">
-        <h2>Buzz Lightyear</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Buzz Lightyear', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/snoopy.avif" alt="Product 5">
+            <h2>Snoopy</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Snoopy', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/minnie.avif" alt="Product 4">
-        <h2>Minnie Mouse</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Minnie Mouse', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/woodstock.avif" alt="Product 6">
+            <h2>Woodstock</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Woodstock', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/snoopy.avif" alt="Product 5">
-        <h2>Snoopy</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Snoopy', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/yoda.avif" alt="Product 7">
+            <h2>Yoda</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Yoda', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/woodstock.avif" alt="Product 6">
-        <h2>Woodstock</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Woodstock', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/sponge.avif" alt="Product 8">
+            <h2>Spongebob</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Spongebob', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/yoda.avif" alt="Product 7">
-        <h2>Yoda</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Yoda', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/aletter.avif" alt="Product 1">
+            <h2>A</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('A', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/sponge.avif" alt="Product 8">
-        <h2>Spongebob</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Spongebob', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/mletter.avif" alt="Product 2">
+            <h2>M</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('M', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/aletter.avif" alt="Product 1">
-        <h2>A</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('A', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/eletter.avif" alt="Product 3">
+            <h2>E</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('E', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/mletter.avif" alt="Product 2">
-        <h2>M</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('M', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/jletter.avif" alt="Product 4">
+            <h2>J</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('J', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/eletter.avif" alt="Product 3">
-        <h2>E</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('E', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/h letter.avif" alt="Product 5">
+            <h2>H</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('H', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/jletter.avif" alt="Product 4">
-        <h2>J</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('J', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/oletter.avif" alt="Product 6">
+            <h2>O</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('O', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/h letter.avif" alt="Product 5">
-        <h2>H</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('H', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/wletter.avif" alt="Product 7">
+            <h2>W</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('W', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/oletter.avif" alt="Product 6">
-        <h2>O</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('O', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/retropack.jpeg" alt="Product 1">
+            <h2>Retro Pack</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Retro Pack', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/wletter.avif" alt="Product 7">
-        <h2>W</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('W', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/hanglooe.avif" alt="Product 2">
+            <h2>Hang Loose</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Hang Loose', 6)">Add to Cart</button>
+        </div>
 
-     <div class="product">
-        <img src="collectionassets/retropack.jpeg" alt="Product 1">
-        <h2>Retro Pack</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Retro Pack', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/heartchain.avif" alt="Product 3">
+            <h2>70s Heart Chain</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('70s Heart Chain', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/hanglooe.avif" alt="Product 2">
-        <h2>Hang Loose</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Hang Loose', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/discocherrie.avif" alt="Product 4">
+            <h2>Disco Cherries</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Disco Cherries', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/heartchain.avif" alt="Product 3">
-        <h2>70s Heart Chain</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('70s Heart Chain', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/festivaldaisy.avif" alt="Product 5">
+            <h2>Festival Daisy Icon</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Festival Daisy Icon', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/discocherrie.avif" alt="Product 4">
-        <h2>Disco Cherries</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Disco Cherries', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/sunnies.avif" alt="Product 6">
+            <h2>Heart Sunglasses</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Heart Sunglasses', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/festivaldaisy.avif" alt="Product 5">
-        <h2>Festival Daisy Icon</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Festival Daisy Icon', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <img src="collectionassets/beadchain.avif" alt="Product 7">
+            <h2>Beaded Strap Chain</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Beaded Strap Chain', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/sunnies.avif" alt="Product 6">
-        <h2>Heart Sunglasses</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Heart Sunglasses', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Soccer', 6, 'collectionassets/soccer.avif', 'Product 1')">🤍
+            </div>
+            <img src="collectionassets/soccer.avif" alt="Product 1">
+            <h2>Soccer</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Soccer', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <img src="collectionassets/beadchain.avif" alt="Product 7">
-        <h2>Beaded Strap Chain</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Beaded Strap Chain', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Basketball', 6, 'collectionassets/basketball.avif', 'Product 2')">🤍</div>
+            <img src="collectionassets/basketball.avif" alt="Product 2">
+            <h2>Basketball</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Basketball', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Soccer', 6, 'collectionassets/soccer.avif', 'Product 1')">🤍</div>
-        <img src="collectionassets/soccer.avif" alt="Product 1">
-        <h2>Soccer</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Soccer', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Football', 6, 'collectionassets/football.avif', 'Product 3')">🤍</div>
+            <img src="collectionassets/football.avif" alt="Product 3">
+            <h2>Football</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Football', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Basketball', 6, 'collectionassets/basketball.avif', 'Product 2')">🤍</div>
-        <img src="collectionassets/basketball.avif" alt="Product 2">
-        <h2>Basketball</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Basketball', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Baseball Glove', 6, 'collectionassets/glove.avif', 'Product 4')">🤍</div>
+            <img src="collectionassets/glove.avif" alt="Product 4">
+            <h2>Baseball Glove</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Baseball Glove', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Football', 6, 'collectionassets/football.avif', 'Product 3')">🤍</div>
-        <img src="collectionassets/football.avif" alt="Product 3">
-        <h2>Football</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Football', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Nascar', 6, 'collectionassets/nascar.avif', 'Product 5')">🤍
+            </div>
+            <img src="collectionassets/nascar.avif" alt="Product 5">
+            <h2>Nascar</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Nascar', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Baseball Glove', 6, 'collectionassets/glove.avif', 'Product 4')">🤍</div>
-        <img src="collectionassets/glove.avif" alt="Product 4">
-        <h2>Baseball Glove</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Baseball Glove', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Softball', 6, 'collectionassets/softball.avif', 'Product 6')">🤍</div>
+            <img src="collectionassets/softball.avif" alt="Product 6">
+            <h2>Softball</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Softball', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Nascar', 6, 'collectionassets/nascar.avif', 'Product 5')">🤍</div>
-        <img src="collectionassets/nascar.avif" alt="Product 5">
-        <h2>Nascar</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Nascar', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Dodgers', 6, 'collectionassets/dodgers.avif', 'Product 7')">
+                🤍</div>
+            <img src="collectionassets/dodgers.avif" alt="Product 7">
+            <h2>Dodgers</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Dodgers', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Softball', 6, 'collectionassets/softball.avif', 'Product 6')">🤍</div>
-        <img src="collectionassets/softball.avif" alt="Product 6">
-        <h2>Softball</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Softball', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Yankees', 6, 'collectionassets/yankees.avif', 'Product 8')">
+                🤍</div>
+            <img src="collectionassets/yankees.avif" alt="Product 8">
+            <h2>Yankees</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Yankees', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Dodgers', 6, 'collectionassets/dodgers.avif', 'Product 7')">🤍</div>
-        <img src="collectionassets/dodgers.avif" alt="Product 7">
-        <h2>Dodgers</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Dodgers', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Stanford', 6, 'collectionassets/stanu.avif', 'Product 1')">
+                🤍</div>
+            <img src="collectionassets/stanu.avif" alt="Product 1">
+            <h2>Stanford</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Stanford', 6)">Add to Cart</button>
+        </div>
 
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Yankees', 6, 'collectionassets/yankees.avif', 'Product 8')">🤍</div>
-        <img src="collectionassets/yankees.avif" alt="Product 8">
-        <h2>Yankees</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Yankees', 6)">Add to Cart</button>
-    </div>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'Duke', 6, 'collectionassets/du.avif', 'Product 2')">🤍</div>
+            <img src="collectionassets/du.avif" alt="Product 2">
+            <h2>Duke</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Duke', 6)">Add to Cart</button>
+        </div>
 
-     <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Stanford', 6, 'collectionassets/stanu.avif', 'Product 1')">🤍</div>
-        <img src="collectionassets/stanu.avif" alt="Product 1">
-        <h2>Stanford</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Stanford', 6)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Duke', 6, 'collectionassets/du.avif', 'Product 2')">🤍</div>
-        <img src="collectionassets/du.avif" alt="Product 2">
-        <h2>Duke</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Duke', 6)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'University of Miami', 6, 'collectionassets/uom.avif', 'Product 3')">🤍</div>
-        <img src="collectionassets/uom.avif" alt="Product 3">
-        <h2>University of Miami</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('University of Miami', 6)">Add to Cart</button>
-    </div>
-
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'University of Kansas', 6, 'collectionassets/uok.avif', 'Product 5')">🤍</div>
-        <img src="collectionassets/uok.avif" alt="Product 5">
-        <h2>University of Kansas</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('University of Kansas', 6)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'University of Oregon', 6, 'collectionassets/uoo.avif', 'Product 6')">🤍</div>
-        <img src="collectionassets/uoo.avif" alt="Product 6">
-        <h2>University of Oregon</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('University of Oregon', 6)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Louisiana State University', 6, 'collectionassets/lsu.avif', 'Product 7')">🤍</div>
-        <img src="collectionassets/lsu.avif" alt="Product 7">
-        <h2>Louisiana State University</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Louisiana State University', 6)">Add to Cart</button>
-    </div>
-
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Florida State University', 6, 'collectionassets/fu.avif', 'Product 7')">🤍</div>
-        <img src="collectionassets/fu.avif" alt="Product 7">
-        <h2>Florida State University</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('Florida State University', 6)">Add to Cart</button>
-    </div>
-
-</section>
-
-        <footer>
-            <p>&copy; 2024 Striders. All rights reserved.</p>
-        </footer>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'University of Miami', 6, 'collectionassets/uom.avif', 'Product 3')">🤍
+            </div>
+            <img src="collectionassets/uom.avif" alt="Product 3">
+            <h2>University of Miami</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('University of Miami', 6)">Add to Cart</button>
+        </div>
 
 
-    </body>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'University of Kansas', 6, 'collectionassets/uok.avif', 'Product 5')">🤍
+            </div>
+            <img src="collectionassets/uok.avif" alt="Product 5">
+            <h2>University of Kansas</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('University of Kansas', 6)">Add to Cart</button>
+        </div>
 
-    <script src="search.js"></script>
-    <script src="wishlist.js"></script>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'University of Oregon', 6, 'collectionassets/uoo.avif', 'Product 6')">🤍
+            </div>
+            <img src="collectionassets/uoo.avif" alt="Product 6">
+            <h2>University of Oregon</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('University of Oregon', 6)">Add to Cart</button>
+        </div>
 
-    </html>
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Louisiana State University', 6, 'collectionassets/lsu.avif', 'Product 7')">
+                🤍</div>
+            <img src="collectionassets/lsu.avif" alt="Product 7">
+            <h2>Louisiana State University</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Louisiana State University', 6)">Add to Cart</button>
+        </div>
 
+        <div class="product">
+            <div class="heart"
+                onclick="toggleHeart(event, 'Florida State University', 6, 'collectionassets/fu.avif', 'Product 7')">🤍
+            </div>
+            <img src="collectionassets/fu.avif" alt="Product 7">
+            <h2>Florida State University</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('Florida State University', 6)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Striders. All rights reserved.</p>
+    </footer>
+
+
+</body>
+
+<script src="search.js"></script>
+<script src="wishlist.js"></script>
+
+</html>
