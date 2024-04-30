@@ -71,8 +71,11 @@
         }
 
         .logo {
-            transition: transform 3s ease;
-            animation: logoHoverAnimation 6s infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            animation: logoHoverAnimation 6s infinite; 
         }
 
         @keyframes logoHoverAnimation {
@@ -106,10 +109,6 @@
             }
         }
 
-        .logo:hover {
-            transform: scale(1.1) rotate(5deg);
-            transition: transform 0.3s ease; 
-        }
     </style>
 
 </head>
