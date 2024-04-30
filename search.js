@@ -63,7 +63,7 @@ var pins = [
 document.getElementById('search-button').addEventListener('click', function() {
     var input = document.getElementById('search-input');
     console.log("Input: " + input.value);
-    var query = input.value.toLowerCase();
+    var query = input.value.trim().toLowerCase();
     var resultsContainer = document.getElementById('results-container');
     resultsContainer.innerHTML = '';
 
