@@ -141,36 +141,58 @@ header {
 
 
     .search-container {
-        width: 0;
-        overflow: hidden;
-        transition: width 0.5s ease;
+        width: 0px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        position: relative;
+        display: none;
         border: 1px solid #f5e1f7;
         border-radius: 10px;
-        mmargin-left: 10px;
+        margin-left: 5px;
         background: white;
-        height: 40px; /* Match the height with your icons */
-        justify-content: space-between; /* This ensures the button aligns to the right */
+        transition: 0.5s;
+
     }
-    
+
+    .search-container.expanded {
+        width: 200px;
+        display: block;
+    }
+
     .search-input {
         flex-grow: 1; /* Allows the input to take up the available space */
         border: none;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
-        height: 100%;
+        hheight: 100%;
+        width: 100%;
+        hheight: 35px;
+        mmargin-right: 8px;
         padding: 0 10px; /* Adds padding inside the input on the left */
+    }
+
+    #search-bar {
+        width: 100%;
+        ooverflow: scroll;
+        display: flex;
+        pposition: relative;
+        justify-content: space-between;
+        height: auto;
     }
     
     .search-button {
         background-color: #ef5fb3;
         color: white;
-        padding: 15px 15px; /* Adjust padding for visual appeal */
-        border: 1px solid #ccc;
+        padding: 10px 10px; /* Adjust padding for visual appeal */
+        border: 2px solid #ffffff;
+        height: 38px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
     }
     
+
     .search-button:hover {
         background-color: #d491af;
     }
@@ -178,16 +200,19 @@ header {
     .results-container {
         position: absolute;
         top: 100%;
+        lleft: 0;
+        width: 100%;
         left: 0;
+        rright: 0;
         width: 100%;
         background: white;
         display: none; /* Hide initially */
-        z-index: 5; /* Ensure it's above other content */
+        z-index: 50; /* Ensure it's above other content */
     }
     
     .results-container div {
         padding: 8px;
-        
+
     }
     
     .results-container div:hover {

@@ -1,11 +1,12 @@
 function toggleSearch() {
+    console.log("toggleSearch function called");
     var searchContainer = document.getElementById('search-container');
-    console.log("Search Toggled");
-    if (searchContainer.style.width === '300px') {
-        searchContainer.style.width = '0';
+    if (searchContainer) {
+        console.log("Yay Search container");
+        searchContainer.classList.toggle('expanded');
+    
     } else {
-        searchContainer.style.width = '300px';
-        document.getElementById('search-input');
+        console.log("Boo no Search container");
     }
 }
 
