@@ -8,6 +8,18 @@
     
 }
 
+@media (max-width: 1315px) {
+    .carousel {
+        max-width: 815px;
+    }
+}
+
+@media (max-width: 865px) {
+    .carousel {
+        max-width: 400px;
+    }
+}
+
 .carouselImages {
     display: flex;
     overflow: hidden;
