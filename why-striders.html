@@ -81,11 +81,11 @@
         }
 
         section.active .section-content {
-            max-height: 1000px;
+            max-height: 800px;
         }
 
         .swiper-container {
-            width: 100%;
+            width: 70%;
             height: auto;
             padding-left: 20px;
             padding-right: 20px;
@@ -93,19 +93,14 @@
 
         .swiper-slide img {
             max-width: 100%;
-            /* Ensures image is not wider than its container */
             max-height: 400px;
-            /* Adjust this value based on your design needs */
             height: auto;
-            /* Maintains aspect ratio */
             object-fit: contain;
-            /* Ensures the image is scaled correctly within the constraints */
         }
 
         @media (max-width: 768px) {
             .swiper-slide img {
                 max-height: 200px;
-                /* Smaller height for smaller devices */
             }
         }
 
@@ -243,21 +238,21 @@
             display: flex;
             gap: 20px;
         }
-        .footer {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      background-color: #f5e1f7;
-      color: #333333;
-      text-align: left;
-      padding: 1rem 2rem;
-      line-height: 1.5;
-      gap: 20px;
-  }
 
-  .footer strong {
-      color: #000000;
-  }
-  
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: #f5e1f7;
+            color: #333333;
+            text-align: left;
+            padding: 1rem 2rem;
+            line-height: 1.5;
+            gap: 20px;
+        }
+
+        .footer strong {
+            color: #000000;
+        }
     </style>
 
 </head>
@@ -330,212 +325,212 @@
             and department store displays. In terms of software, commerce and site operation, Striders Shoes' team is
             incredibly lean, drawing on the skills of its internal team and the Teal Design Team.</p>
     </div>
-       
+
 </body>
 
 
 <script src="search.js">
-    </script>
+</script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const images = [
-                "collectionassets/key partners.jpeg",
-                "collectionassets/competitive.jpeg",
-                "collectionassets/pro forma.jpeg"
-            ];
-            const captions = [
-                "Business Model Canvas, featuring particular targets and opportunities for Striders Shoes.",
-                "Competitor Matrix, with focus on footwear brands and other aesthetically-competitive accessory and customization brands.",
-                "Financial projections and models, displayed in a Pro Forma spreadsheet. Visual analysis of the data is featured on an interactive graph below!"
-            ];
-            let currentIndex = 0;
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = [
+            "collectionassets/key partners.jpeg",
+            "collectionassets/competitive.jpeg",
+            "collectionassets/pro forma.jpeg"
+        ];
+        const captions = [
+            "Business Model Canvas, featuring particular targets and opportunities for Striders Shoes.",
+            "Competitor Matrix, with focus on footwear brands and other aesthetically-competitive accessory and customization brands.",
+            "Financial projections and models, displayed in a Pro Forma spreadsheet. Visual analysis of the data is featured on an interactive graph below!"
+        ];
+        let currentIndex = 0;
 
-            const imgElement = document.getElementById('gallery-img');
-            const nextBtn = document.getElementById('nextBtn');
-            const prevBtn = document.getElementById('prevBtn');
+        const imgElement = document.getElementById('gallery-img');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
 
-            nextBtn.addEventListener('click', function () {
-                currentIndex = (currentIndex + 1) % images.length;
-                imgElement.src = images[currentIndex];
-                imgElement.alt = captions[currentIndex];
-                imgElement.nextElementSibling.textContent = captions[currentIndex]; // Add this line
-            });
-
-            prevBtn.addEventListener('click', function () {
-                currentIndex = (currentIndex - 1 + images.length) % images.length;
-                imgElement.src = images[currentIndex];
-                imgElement.alt = captions[currentIndex];
-                imgElement.nextElementSibling.textContent = captions[currentIndex]; // Add this line
-            });
+        nextBtn.addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % images.length;
+            imgElement.src = images[currentIndex];
+            imgElement.alt = captions[currentIndex];
+            imgElement.nextElementSibling.textContent = captions[currentIndex];
         });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var ctx = document.getElementById('BreakevenChart').getContext('2d');
-            var BreakevenChart = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: ['Pre-launch Month 1', 'Pre-launch Month 2', 'Pre-launch Month 3', 'July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024', 'January 2025', 'February 2025', 'March 2025', 'April 2025', 'May 2025', 'June 2025', 'July 2025', 'August 2025', 'September 2025', 'October 2025', 'November 2025', 'December 2025'],
-                    datasets: [{
-                        label: 'Total Expenses ($)',
-                        data: [-3550.00, -6175.00, -8875.00, -12375.00, -17375.00, -17375.00, -19000.00, -24000.00, -25500.00, -18000.00, -18000.00, -18500.00, -25600.00, -19300.00, -19300.00, -19300.00, -17300.00, -18300.00, -18300.00, -18300.00, -20300.00],
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                        borderColor: 'rgba(255, 99, 132, 1)',
-                        borderWidth: 1,
-                        yAxisID: 'y',
-                    }, {
-                        label: 'Net Profit ($)',
-                        data: [-3500.00, -6175.00, -8875.00, -2675.00, -7875.00, -8675.00, -5000.00, -14100.00, -24400.00, -2800.00, 0.00, 4800.00, 7600.00, 3000.00, 29200.00, 22100.00, 241100.00, 30820.00, 35350.00, 40300.00, 83700.00],
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                        borderColor: 'rgba(54, 162, 235, 1)',
-                        borderWidth: 1,
-                        yAxisID: 'y1',
-                    }]
+
+        prevBtn.addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            imgElement.src = images[currentIndex];
+            imgElement.alt = captions[currentIndex];
+            imgElement.nextElementSibling.textContent = captions[currentIndex];
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var ctx = document.getElementById('BreakevenChart').getContext('2d');
+        var BreakevenChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Pre-launch Month 1', 'Pre-launch Month 2', 'Pre-launch Month 3', 'July 2024', 'August 2024', 'September 2024', 'October 2024', 'November 2024', 'December 2024', 'January 2025', 'February 2025', 'March 2025', 'April 2025', 'May 2025', 'June 2025', 'July 2025', 'August 2025', 'September 2025', 'October 2025', 'November 2025', 'December 2025'],
+                datasets: [{
+                    label: 'Total Expenses ($)',
+                    data: [-3550.00, -6175.00, -8875.00, -12375.00, -17375.00, -17375.00, -19000.00, -24000.00, -25500.00, -18000.00, -18000.00, -18500.00, -25600.00, -19300.00, -19300.00, -19300.00, -17300.00, -18300.00, -18300.00, -18300.00, -20300.00],
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    yAxisID: 'y',
+                }, {
+                    label: 'Net Profit ($)',
+                    data: [-3500.00, -6175.00, -8875.00, -2675.00, -7875.00, -8675.00, -5000.00, -14100.00, -24400.00, -2800.00, 0.00, 4800.00, 7600.00, 3000.00, 29200.00, 22100.00, 241100.00, 30820.00, 35350.00, 40300.00, 83700.00],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    yAxisID: 'y1',
+                }]
+            },
+            options: {
+                layout: {
+                    padding: {
+                        left: 35,
+                        right: 35,
+                        top: 35,
+                        bottom: 35
+                    }
                 },
-                options: {
-                    layout: {
-                        padding: {
-                            left: 35, // Reduced from 50 to 35
-                            right: 35, // Reduced from 50 to 35
-                            top: 35, // Reduced from 50 to 35
-                            bottom: 35 // Reduced from 50 to 35
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Pro Forma: Striders Shoes Breakeven JS Chart',
+                        font: {
+                            family: 'Raleway, sans-serif',
+                            size: 20,
+                            color: '#333'
                         }
                     },
-                    plugins: {
+                    description: {
+                        display: true,
+                        text: 'This chart shows the expenses and net profits of Striders Shoes over time.',
+                        font: {
+                            family: 'Raleway, sans-serif',
+                            size: 16,
+                            color: '#333'
+                        },
+                        maxWidth: 100
+                    }
+                },
+                scales: {
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
                         title: {
                             display: true,
-                            text: 'Pro Forma: Striders Shoes Breakeven JS Chart',
+                            text: 'Expenses ($)',
                             font: {
                                 family: 'Raleway, sans-serif',
                                 size: 20,
                                 color: '#333'
                             }
                         },
-                        description: {
-                            display: true,
-                            text: 'This chart shows the expenses and net profits of Striders Shoes over time.',
+                        ticks: {
                             font: {
                                 family: 'Raleway, sans-serif',
-                                size: 16,
+                                size: 15,
                                 color: '#333'
-                            },
-                            maxWidth: 100
+                            }
                         }
                     },
-                    scales: {
-                        y: {
-                            type: 'linear',
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        title: {
                             display: true,
-                            position: 'left',
-                            title: {
-                                display: true,
-                                text: 'Expenses ($)',
-                                font: {
-                                    family: 'Raleway, sans-serif',
-                                    size: 20,
-                                    color: '#333'
-                                }
-                            },
-                            ticks: {
-                                font: {
-                                    family: 'Raleway, sans-serif',
-                                    size: 15,
-                                    color: '#333'
-                                }
-                            }
-                        },
-                        y1: {
-                            type: 'linear',
-                            display: true,
-                            position: 'right',
-                            title: {
-                                display: true,
-                                text: 'Net Profits ($)',
-                                font: {
-                                    family: 'Raleway, sans-serif',
-                                    size: 20,
-                                    color: '#333'
-                                }
-                            },
-                            grid: {
-                                drawOnChartArea: false,
-                            },
-                            ticks: {
-                                font: {
-                                    family: 'Raleway, sans-serif',
-                                    size: 15,
-                                    color: '#333'
-                                }
-                            }
-                        },
-                        x: {
-                            ticks: {
-                                font: {
-                                    family: 'Raleway, sans-serif',
-                                    size: 12,
-                                    color: '#333'
-                                }
-                            }
-                        }
-                    },
-                    elements: {
-                        line: {
-                            fill: false
-                        },
-                        point: {
-                            radius: 5,
-                            hitRadius: 10,
-                            hoverRadius: 4
-                        }
-                    },
-                    tooltips: {
-                        mode: 'index',
-                        intersect: false,
-                        callbacks: {
-                            label: function (tooltipItem, data) {
-                                return data.datasets[tooltipItem.datasetIndex].label + ": " + tooltipItem.yLabel;
-                            }
-                        }
-                    },
-                    hover: {
-                        mode: 'nearest',
-                        intersect: true
-                    },
-                    legend: {
-                        labels: {
+                            text: 'Net Profits ($)',
                             font: {
                                 family: 'Raleway, sans-serif',
                                 size: 20,
                                 color: '#333'
                             }
+                        },
+                        grid: {
+                            drawOnChartArea: false,
+                        },
+                        ticks: {
+                            font: {
+                                family: 'Raleway, sans-serif',
+                                size: 15,
+                                color: '#333'
+                            }
                         }
                     },
-                    font: {
-                        family: 'Raleway, sans-serif',
-                        size: 20,
-                        color: '#333'
+                    x: {
+                        ticks: {
+                            font: {
+                                family: 'Raleway, sans-serif',
+                                size: 12,
+                                color: '#333'
+                            }
+                        }
                     }
+                },
+                elements: {
+                    line: {
+                        fill: false
+                    },
+                    point: {
+                        radius: 5,
+                        hitRadius: 10,
+                        hoverRadius: 4
+                    }
+                },
+                tooltips: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: function (tooltipItem, data) {
+                            return data.datasets[tooltipItem.datasetIndex].label + ": " + tooltipItem.yLabel;
+                        }
+                    }
+                },
+                hover: {
+                    mode: 'nearest',
+                    intersect: true
+                },
+                legend: {
+                    labels: {
+                        font: {
+                            family: 'Raleway, sans-serif',
+                            size: 20,
+                            color: '#333'
+                        }
+                    }
+                },
+                font: {
+                    family: 'Raleway, sans-serif',
+                    size: 20,
+                    color: '#333'
                 }
-            });
+            }
         });
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var mySwiper = new Swiper('.swiper-container', {
-                loop: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
+    });
+</script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
         });
-    </script>
+    });
+</script>
 
 </html>
