@@ -9,29 +9,29 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
 
-        .collection-list{
+        .collection-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             grid-gap: 20px;
             margin: 70px;
-            
+
         }
 
-        .collection{
-          
+        .collection {
+
             padding: 30px;
             background-color: #f9f9f9;
             text-align: center;
         }
 
-        .collection:hover{
+        .collection:hover {
 
             background-color: #f5c2e7;
             z-index: 1;
             opacity: 50%;
         }
 
-        img{
+        img {
             width: 200px;
             height: 200px;
             margin: 5%;
@@ -44,11 +44,12 @@
     </style>
 
 </head>
-<body>
- <header>
-    <div class="logo"><a href="main-page.html">Striders.</a></div>
 
-    <nav>
+<body>
+    <header>
+        <div class="logo"><a href="main-page.html">Striders.</a></div>
+
+        <nav>
             <ul>
                 <li><a href="main-page.html">Home</a></li>
                 <li><a href="all-pins.html">All Pins</a></li>
@@ -69,75 +70,98 @@
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
             <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
-        
+
     </header>
-   
-        <main>
-            <div class="main">
-                <h1>Collections</h1>
-                <p>PINS FOR EVERY OCCASION</p>
-                
-                
-            </div>
 
-            <div class = "collection-list">
-                
-                <a href = "collectionsports.html">
-                    <div class="collection" >
-                    
-                        <img src="collectionassets/sportscollection.jpeg" alt="collection 1">
-                        <h2>Sports</h2>
-                    </div>
-                </a>
-                
-                <a href = "collectioncartoon.html">
-                    <div class="collection">
-                        <img src="collectionassets/cartooncollection.jpeg" alt="collection 2">
-                        <h2>Cartoons</h2>
-                    </div>
-                </a>
-                
-                <a href = "collectionletter.html">
-                    <div class="collection">
-                        <img src="collectionassets/lettercollection.webp" alt="collection 3">
-                        <h2>Letters</h2>
-                        
-                    </div>
-                </a>
+    <main>
+        <div class="main">
+            <h1>Collections</h1>
+            <p>PINS FOR EVERY OCCASION</p>
 
-                <a href = "collectionretro.html">
-                    <div class="collection">
-                        <img src="collectionassets/retrocollection.jpeg" alt="collection 4">
-                        <h2>Retro</h2>
-                    </div>
-                </a>
 
-                <a href = "collectionuniversity.html">
-                    <div class="collection">
-                        <img src="collectionassets/universitycollection.jpeg" alt="collection 5">
-                        <h2>University</h2>
-                    </div>
-                </a>
+        </div>
 
-                <a href = "collectionanimal.html">
-                    <div class="collection">
-                        <img src="collectionassets/animalcollection.jpeg" alt="collection 6">
-                        <h2>Animal</h2>
-                    </div>
-                </a>
+        <div class="collection-list">
 
-            </div>
+            <a href="collectionsports.html">
+                <div class="collection">
 
-    
-        
-        </main>
+                    <img src="collectionassets/sportscollection.jpeg" alt="collection 1">
+                    <h2>Sports</h2>
+                </div>
+            </a>
 
-        <footer>
-            <p>&copy; 2024 Striders. All rights reserved.</p>
-        </footer>
-    </body>
+            <a href="collectioncartoon.html">
+                <div class="collection">
+                    <img src="collectionassets/cartooncollection.jpeg" alt="collection 2">
+                    <h2>Cartoons</h2>
+                </div>
+            </a>
 
-    <script src="search.js"></script>
-    
+            <a href="collectionletter.html">
+                <div class="collection">
+                    <img src="collectionassets/lettercollection.webp" alt="collection 3">
+                    <h2>Letters</h2>
 
-    </html>
+                </div>
+            </a>
+
+            <a href="collectionretro.html">
+                <div class="collection">
+                    <img src="collectionassets/retrocollection.jpeg" alt="collection 4">
+                    <h2>Retro</h2>
+                </div>
+            </a>
+
+            <a href="collectionuniversity.html">
+                <div class="collection">
+                    <img src="collectionassets/universitycollection.jpeg" alt="collection 5">
+                    <h2>University</h2>
+                </div>
+            </a>
+
+            <a href="collectionanimal.html">
+                <div class="collection">
+                    <img src="collectionassets/animalcollection.jpeg" alt="collection 6">
+                    <h2>Animal</h2>
+                </div>
+            </a>
+
+        </div>
+
+
+
+    </main>
+</body>
+
+<footer>
+    <footer class="footer">
+        <div class="column">
+            <strong>Team Links</strong>
+            <ul>
+                <li><a href="https://github.com/awhmaisy/275-striders-cooked">Our GitHub</a></li>
+                <li><a
+                        href="https://app.mural.co/t/academydev4025/m/academydev4025/1711638743168/8316d295296c91f1cdee9bb4a824204a2847dcb8?sender=dent0367">Our
+                        Mural Page</a></li>
+            </ul>
+        </div>
+        <div class="column"><strong>Page Navigation</strong>
+            <ul>
+                <li><a href="main-page.html">Home</a></li>
+                <li><a href="all-pins.html">All Pins</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="why-striders.html">Why Striders?</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="column"><em>&copy; 2024 Striders.</em><br><em>All rights reserved.</em></div>
+        <div class="column logo">
+            <div class="logo"><a href="main-page.html">Striders.</a></div>
+        </div>
+    </footer>
+</footer>
+
+<script src="search.js"></script>
+
+
+</html>
