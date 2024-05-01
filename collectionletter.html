@@ -12,11 +12,12 @@
     </style>
 
 </head>
-<body>
- <header>
-    <div class="logo"><a href="main-page.html">Striders.</a></div>
 
-    <nav>
+<body>
+    <header>
+        <div class="logo"><a href="main-page.html">Striders.</a></div>
+
+        <nav>
             <ul>
                 <li><a href="main-page.html">Home</a></li>
                 <li><a href="all-pins.html">All Pins</a></li>
@@ -37,95 +38,125 @@
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
             <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
-        
+
     </header>
 
-<main>
-    <div class="main">
-        <h1>Letters</h1>
-        <p>What does that spell? You tell us! Add a pin and write your story - your shoe is your canvas.</p>
+    <main>
+        <div class="main">
+            <h1>Letters</h1>
+            <p>What does that spell? You tell us! Add a pin and write your story - your shoe is your canvas.</p>
 
-    </div>
-</main>
+        </div>
+    </main>
 
-<section class="product-list">
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'A', 6, 'collectionassets/aletter.avif', 'Product 1')">🤍</div>
-        <img src="collectionassets/aletter.avif" alt="Product 1">
-        <h2>A</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('A', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'M', 6, 'collectionassets/mletter.avif', 'Product 2')">🤍</div>
-        <img src="collectionassets/mletter.avif" alt="Product 2">
-        <h2>M</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('M', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'E', 6, 'collectionassets/eletter.avif', 'Product 3')">🤍</div>
-        <img src="collectionassets/eletter.avif" alt="Product 3">
-        <h2>E</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('E', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'J', 6, 'collectionassets/jletter.avif', 'Product 4')">🤍</div>
-        <img src="collectionassets/jletter.avif" alt="Product 4">
-        <h2>J</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('J', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'H', 6, 'collectionassets/h letter.avif', 'Product 5')">🤍</div>
-        <img src="collectionassets/h letter.avif" alt="Product 5">
-        <h2>H</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('H', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'O', 6, 'collectionassets/oletter.avif', 'Product 6')">🤍</div>
-        <img src="collectionassets/oletter.avif" alt="Product 6">
-        <h2>O</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('O', 6)">Add to Cart</button>
-    </div>
-    
-    <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'W', 6, 'collectionassets/wletter.avif', 'Product 7')">🤍</div>
-        <img src="collectionassets/wletter.avif" alt="Product 7">
-        <h2>W</h2>
-        <p>$6.00</p>
-        <button onclick="addToCart('W', 6)">Add to Cart</button>
-    </div>
+    <section class="product-list">
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'A', 6, 'collectionassets/aletter.avif', 'Product 1')">🤍
+            </div>
+            <img src="collectionassets/aletter.avif" alt="Product 1">
+            <h2>A</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('A', 6)">Add to Cart</button>
+        </div>
 
-</section>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'M', 6, 'collectionassets/mletter.avif', 'Product 2')">🤍
+            </div>
+            <img src="collectionassets/mletter.avif" alt="Product 2">
+            <h2>M</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('M', 6)">Add to Cart</button>
+        </div>
 
-<footer>
-    <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
-</footer>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'E', 6, 'collectionassets/eletter.avif', 'Product 3')">🤍
+            </div>
+            <img src="collectionassets/eletter.avif" alt="Product 3">
+            <h2>E</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('E', 6)">Add to Cart</button>
+        </div>
 
-<script>
-    function addToCart(productName, price) {
-        // Get the existing cart items from local storage or initialize an empty array
-        var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'J', 6, 'collectionassets/jletter.avif', 'Product 4')">🤍
+            </div>
+            <img src="collectionassets/jletter.avif" alt="Product 4">
+            <h2>J</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('J', 6)">Add to Cart</button>
+        </div>
 
-        // Add the new item to the cart
-        cartItems.push({productName: productName, price: price});
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'H', 6, 'collectionassets/h letter.avif', 'Product 5')">🤍
+            </div>
+            <img src="collectionassets/h letter.avif" alt="Product 5">
+            <h2>H</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('H', 6)">Add to Cart</button>
+        </div>
 
-        // Store the updated cart items back to local storage
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'O', 6, 'collectionassets/oletter.avif', 'Product 6')">🤍
+            </div>
+            <img src="collectionassets/oletter.avif" alt="Product 6">
+            <h2>O</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('O', 6)">Add to Cart</button>
+        </div>
 
-        // Redirect to the shopping cart page
-        window.location.href = "shopping-cart.html";
-    }
-</script>
+        <div class="product">
+            <div class="heart" onclick="toggleHeart(event, 'W', 6, 'collectionassets/wletter.avif', 'Product 7')">🤍
+            </div>
+            <img src="collectionassets/wletter.avif" alt="Product 7">
+            <h2>W</h2>
+            <p>$6.00</p>
+            <button onclick="addToCart('W', 6)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <footer class="footer">
+            <div class="column">
+                <strong>Team Links</strong>
+                <ul>
+                    <li><a href="https://github.com/awhmaisy/275-striders-cooked">Our GitHub</a></li>
+                    <li><a
+                            href="https://app.mural.co/t/academydev4025/m/academydev4025/1711638743168/8316d295296c91f1cdee9bb4a824204a2847dcb8?sender=dent0367">Our
+                            Mural Page</a></li>
+                </ul>
+            </div>
+            <div class="column"><strong>Page Navigation</strong>
+                <ul>
+                    <li><a href="main-page.html">Home</a></li>
+                    <li><a href="all-pins.html">All Pins</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="why-striders.html">Why Striders?</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="column"><em>&copy; 2024 Striders.</em><br><em>All rights reserved.</em></div>
+            <div class="column logo">
+                <div class="logo"><a href="main-page.html">Striders.</a></div>
+            </div>
+        </footer>
+    </footer>
+
+    <script>
+        function addToCart(productName, price) {
+            // Get the existing cart items from local storage or initialize an empty array
+            var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+            // Add the new item to the cart
+            cartItems.push({ productName: productName, price: price });
+
+            // Store the updated cart items back to local storage
+            localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+            // Redirect to the shopping cart page
+            window.location.href = "shopping-cart.html";
+        }
+    </script>
 
 </body>
 
