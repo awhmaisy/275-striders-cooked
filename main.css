@@ -135,9 +135,6 @@ nav ul li a:hover {
     }
 }
 
-
-
-
 .search-container {
     width: 0px;
     display: flex;
@@ -216,9 +213,11 @@ nav ul li a:hover {
     color: #333333;
     text-align: left; 
     padding: 1rem;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.5;
-}
+    padding: 1rem 200px;
+    gap: 15px;
+    }
 
 .footer strong {
     color: #000000; 
