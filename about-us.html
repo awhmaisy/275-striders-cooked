@@ -26,18 +26,22 @@
         .team-members {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
+            align-items: center;
+            column-gap: 30px;
 
         }
 
         .team-member {
             width: calc(33.33% - 20px);
-            margin-bottom: 40px;
             text-align: center;
+            margin: 40px auto;
+            margin-top: 0px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             background-color: #ffffff;
+            min-width: 350px;
         }
 
         .team-member img {
@@ -49,6 +53,7 @@
 
         .team-member:hover img {
             transform: scale(1.05);
+            transition: .5s;
         }
 
         .team-member h3 {
@@ -90,7 +95,7 @@
             background-size: 400% 400%;
         }
 
-        .team-member h3+p, {
+        .team-member h3 p {
             text-align: left;
         }
 
@@ -155,7 +160,7 @@
         <br><br>
         <section id="website-team" class="fade-in">
 
-            <h2 class="team-title">Striders Team</h2><br><br>
+            <h2 class="team-title">Striders. Team</h2><br><br>
             <div class="team-members">
                 <div class="team-member centered-member">
                     <img src="teamassets/lukas.jpg" alt="Lukas Ross headshot">
@@ -172,7 +177,7 @@
         </section>
 
 
-        <br>
+        <br><br>
         <hr><br><br>
         <section id="website-team" class="fade-in">
             <h2 class="team-title">Website Team</h2><br><br>
@@ -181,10 +186,10 @@
                     <img src="teamassets/mari.jpeg" alt="Mari Edler headshot">
                     <h3>Mari Edler</h3>
                     <p>PM and Developer</p>
-                    <p>Mari's passions and skills lie in art & design, production & organizational management,
+                    <p>A freshman at USC's Iovine and Young Academy, Mari's passions and skills lie in art & design, production & organizational management,
                         public speaking, operations, and marketing strategy. She is experienced in composing
                         visual
-                        stories and directed the telling of the Striders Shoes story.</p>
+                        stories and directed the telling of the Striders. story. </p>
                 </div>
                 <div class="team-member">
                     <img src="teamassets/ashleynew.jpg" alt="Ashley Chan headshot">
