@@ -182,7 +182,6 @@ nav ul li a:hover {
     height: 38px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
 
 
@@ -214,10 +213,15 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: #f5e1f7;
-    color: #000000; 
+    color: #333333;
     text-align: left; 
     padding: 1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
+    line-height: 1.5;
+}
+
+.footer strong {
+    color: #000000; 
 }
 
 .footer .column ul {
