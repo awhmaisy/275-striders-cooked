@@ -9,6 +9,7 @@
     <script src="carousel.js" defer></script>
 
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
 
         img {
@@ -27,7 +28,7 @@
             100% {
                 color: black;
             }
-        } 
+        }
 
         .how-it-works {
             animation: colorChange 2s infinite;
@@ -75,7 +76,7 @@
         }
 
         .logo:hover {
-            animation: logoHoverAnimation 6s infinite; 
+            animation: logoHoverAnimation 6s infinite;
         }
 
         @keyframes logoHoverAnimation {
@@ -83,32 +84,38 @@
                 transform: scale(1) rotate(0deg) translateX(0%);
                 opacity: 1;
             }
+
             10% {
                 transform: scale(1) rotate(5deg) translateX(0%);
                 opacity: 1;
             }
+
             30% {
                 transform: scale(1) rotate(-5deg) translateX(0%);
                 opacity: 1;
             }
+
             70% {
                 transform: scale(1) rotate(0deg) translateX(0%);
                 opacity: 1;
             }
+
             75% {
                 transform: translateX(-5%);
             }
+
             80% {
                 transform: translateX(5%);
             }
+
             85% {
                 transform: translateX(-5%);
             }
+
             90% {
                 transform: translateX(0%);
             }
         }
-
     </style>
 
 </head>
@@ -116,7 +123,7 @@
 <body>
     <header>
         <div class="logo"><a href="main-page.html">Striders.</a></div>
-       
+
         <nav>
             <ul>
                 <li><a href="main-page.html">Home</a></li>
@@ -133,8 +140,8 @@
                     <button id="search-button" class="search-button">Go</button>
                 </div>
                 <div id="results-container" class="results-container"></div>
-            </div>          
-            <span class="icon" onclick="toggleSearch()">🔍</span>                     
+            </div>
+            <span class="icon" onclick="toggleSearch()">🔍</span>
             <span class="icon"><a href="shopping-cart.html">🛒</a></span>
             <span class="icon"><a href="wishlist.html">🩷</a></span>
         </div>
@@ -263,9 +270,9 @@
                 <button class="accordion">Are you hiring?</button>
                 <div class="panel">
                     <p>We can't wait for you to join our team! We will be releasing hiring
-                         applications following our launch. If you're a designer and would
-                          like to share your resume and projects, shoot us an email at 
-                          team@striders.com!</p><br>
+                        applications following our launch. If you're a designer and would
+                        like to share your resume and projects, shoot us an email at
+                        team@striders.com!</p><br>
                 </div>
             </div>
         </div>
@@ -273,6 +280,14 @@
 
     <footer>
         <p>&copy; 2024 Striders. All rights reserved.</p>
+        <footer class="footer">
+            <div class="column">Column 1</div>
+            <div class="column">Column 2</div>
+            <div class="column">Column 3</div>
+            <div class="column logo">
+                <div class="logo"><a href="main-page.html">Striders.</a></div>
+            </div>
+        </footer>
     </footer>
 </body>
 

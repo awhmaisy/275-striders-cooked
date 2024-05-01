@@ -28,8 +28,8 @@ button {
 }
 
 footer {
-    background-color: #252a34;
-    color: #ffffff;
+    background-color: #f5e1f7;
+    color: #000000;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -211,4 +211,27 @@ nav ul li a:hover {
 
 .results-container div:hover {
     background-color: #f0f0f0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #f5e1f7; /* Same color as the logo background */
+    color: #000000; /* Black text color */
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif; /* Use the Inter font from Google Fonts */
+}
+
+.footer .column {
+    padding: 10px;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .logo img {
+    width: 100px; /* Adjust the width as needed */
 }
