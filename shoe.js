@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function() {
             const productName = this.getAttribute('data-product');
             if (this.textContent.includes('Remove')) {
-                this.textContent = `Try On`;
+                this.textContent = `Try On!`;
             } else {
                 this.textContent = `Remove`;
             }
