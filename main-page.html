@@ -57,8 +57,9 @@
             background-color: #f5c2e7;
         }
 
-        .how-it-works {
+        #how-it-works {
             animation: colorChange 2s infinite;
+            visibility: hidden;
         }
 
         .accordion {
@@ -253,6 +254,10 @@
             visibility: hidden;
         }
 
+        #placeholder{
+            visibility: hidden;
+        }
+
 
     </style>
 
@@ -357,7 +362,7 @@
                         to any type of shoe! </em> </h4>
 
                 <br><br><br>
-                <h1 style="font-size: 40;" class="how-it-works"> How it Works </h1>
+                <h1 style="font-size: 40;" id="how-it-works"> How it Works </h1>
                 <li style="text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;"
                     class="how-it-works">
                 
@@ -377,7 +382,7 @@
                     <br><br><br>
                 </div>
                 
-
+                <div id = placeholder> placeholder</div>
                 <!--]
                 <div style="width: 100%; bborder: black 1px solid;">
                     <div class = numbers id = num2>2.</div>
@@ -432,6 +437,7 @@
                     <source type="audio/mp3" src="body.m4a">
                 </audio>
 
+
             </div>
             <script>
 
@@ -440,7 +446,7 @@
                 var start = function(){
                     $("#introduction").trigger("play");
 
-                    $("#pinback").animate(
+                    $("#placeholder").animate(
                     {	"right":"350px"}, 26000, "linear",
 
                     function(){ part1() })
@@ -451,10 +457,11 @@
                     $("#arrow").animate(
                         {"top": "500px"}, 1000
                     ); 
+                    $('#how-it-works').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
 
                     $("#howitworks").trigger("play");
                     
-                    $("#pinback").animate(
+                    $("#placeholder").animate(
                     {	"right":"350px"}, 9000, "linear",
 
                     function(){ part2() })
@@ -474,7 +481,7 @@
                 
                     ) */
 
-                    //$('#arrow').css('display', 'none');
+                    $('#arrow').css('display', 'none');
                     
                     $("#pinbackaudio").trigger("play");
                     $('#pinback').css('visibility', 'visible');
@@ -483,7 +490,7 @@
                     $('#pinbacktext').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
 
                     $("#pinback").animate(
-                    {	"left": "1000px"}, 12000, "linear",
+                    {	"left": "1000px"}, 12500, "linear",
 
                     function(){ part3() } )
             
@@ -521,12 +528,14 @@
                         start();
                     });
                 });
+
                 </script>
 
             <script>
                 
                 document.querySelector(".how-it-works").addEventListener("click", function(){ 
 
+                    $('#how-it-works').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
                     part2();
 
                 })
@@ -543,7 +552,7 @@
             <br><br><hr><br>
             <div class="faq">
                 <h1>FAQ</h1><br>
-                <button class="accordion">What is Striders?</button>
+                <button class="accordion">Whfat is Striders?</button>
                 <div class="panel">
                     <p>Striders is a shoe customization company that offers a wide range of charms to personalize your
                         shoes.</p><br>
