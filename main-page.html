@@ -331,6 +331,339 @@
                     </a>
                     <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionuniversity.html"
                         class="carouselLink">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Striders Shoes | Homepage</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script src="carousel.js" defer></script>
+    <link href=https://fonts.cdnfonts.com/css/sf-pro-display'' rel=stylesheet''>
+    <script src="http://code.jquery.com/jquery.js"> </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
+
+        img {
+            height: 400px;
+        }
+
+        @keyframes colorChange {
+            0% {
+                color: black;
+            }
+
+            50% {
+                color: #ef5fb3;
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        @keyframes volume {
+            0% {
+                width: 70px;
+            }
+
+            50% {
+                width: 90px;
+            }
+
+            100% {
+                width: 70px;
+            }
+        }
+
+        hr {
+            width: 75%;
+            margin: auto;
+            height: 5px;
+            border-width: 0px;
+            border-color: #f5c2e7;
+            border-top-color: #f5c2e7;
+            border-bottom-color: #f5c2e7;
+            color: #f5c2e7;
+            background-color: #f5c2e7;
+        }
+
+        #how-it-works {
+            animation: colorChange 2s infinite;
+            visibility: hidden;
+        }
+
+        .accordion {
+            font-family: "Raleway", sans-serif;
+            font-size: 16;
+            font-weight: bold;
+            background-color: #f5c2e7;
+            color: #252a34;
+            padding: 18px;
+            width: 70%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            border-radius: 10px;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ff8ccf;
+        }
+
+        .panel {
+            font-family: "Raleway", sans-serif;
+            padding: 0 18px;
+            background-color: white;
+            overflow: hidden;
+            max-width: 65%;
+            max-height: 0;
+            transition: max-height 0.2s;
+            border-radius: 0 0 10px 10px;
+            margin: 15px auto;
+            text-align: center;
+        }
+
+        .faq {
+            padding-top: 20px;
+        }
+
+        .logo {
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            animation: logoHoverAnimation 6s infinite;
+        }
+
+        @keyframes logoHoverAnimation {
+            0% {
+                transform: scale(1) rotate(0deg) translateX(0%);
+                opacity: 1;
+            }
+
+            10% {
+                transform: scale(1) rotate(5deg) translateX(0%);
+                opacity: 1;
+            }
+
+            30% {
+                transform: scale(1) rotate(-5deg) translateX(0%);
+                opacity: 1;
+            }
+
+            70% {
+                transform: scale(1) rotate(0deg) translateX(0%);
+                opacity: 1;
+            }
+
+            75% {
+                transform: translateX(-5%);
+            }
+
+            80% {
+                transform: translateX(5%);
+            }
+
+            85% {
+                transform: translateX(-5%);
+            }
+
+            90% {
+                transform: translateX(0%);
+            }
+        }
+
+        #audio {
+            position: fixed;
+            top: 150px;
+            right: 100px;
+            width: 70px;
+            height: auto;
+
+            animation: volume 2s infinite;
+        }
+
+        #arrow {
+            position: fixed;
+            top: 300px;
+            right: 100px;
+            width: 70px;
+            height: auto;
+            visibility: hidden;
+        }
+
+        .numbers {
+            font-family: "Spicy Rice", serif;
+            color: white;
+            font-size: 50;
+            border: 10px solid #f5e1f7;
+            background-color: #ef5fb3;
+            border-radius: 70%;
+            width: 150;
+            height: 150;
+
+            padding: 3%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titles {
+            font-family: "Spicy Rice", serif;
+            color: #ef5fb3;
+            padding: 3%;
+            font-size: 35;
+            position: absolute;
+            float: left
+        }
+
+        #num1 {
+            visibility: hidden;
+            position: absolute;
+            top: 1200px;
+        }
+
+        #num2 {
+            visibility: hidden;
+            position: absolute;
+            top: 1400px;
+            right: 18%;
+        }
+
+        #num3 {
+            visibility: hidden;
+            position: absolute;
+            top: 1600px;
+        }
+
+        #pinbacktext {
+            position: absolute;
+            top: 1200px;
+            left: 600px;
+            visibility: hidden;
+        }
+
+        #pinshieldtext {
+            position: absolute;
+            top: 1400px;
+            right: 500px;
+            visibility: hidden;
+        }
+
+        #pinbodytext {
+            position: absolute;
+            top: 1600px;
+            left: 600px;
+            visibility: hidden;
+        }
+
+        #pinback {
+            position: absolute;
+            width: 180px;
+            height: auto;
+            right: -500px;
+            top: 1030px;
+            visibility: hidden;
+        }
+
+        #pinshield {
+            position: absolute;
+            width: 200px;
+            height: auto;
+            left: -200px;
+            top: 1320px;
+            visibility: hidden;
+        }
+
+        #pinbody {
+            position: absolute;
+            height: 200px;
+            right: -200px;
+            top: 1600px;
+            visibility: hidden;
+        }
+
+        #placeholder {
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="main-page.html">Striders.</a></div>
+
+        <nav>
+            <ul>
+                <li><a href="main-page.html">Home</a></li>
+                <li><a href="all-pins.html">All Pins</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="why-striders.html">Why Striders?</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="headerIcons">
+            <div id="search-container" class="search-container">
+                <div id="search-bar">
+                    <input type="text" id="search-input" placeholder="Search Pins..." class="search-input">
+                    <button id="search-button" class="search-button">Go</button>
+                </div>
+                <div id="results-container" class="results-container"></div>
+            </div>
+            <span class="icon" onclick="toggleSearch()">🔍</span>
+            <span class="icon"><a href="shopping-cart.html">🛒</a></span>
+            <span class="icon"><a href="wishlist.html">🩷</a></span>
+        </div>
+    </header>
+
+    <main>
+        <div style="background-color: #ffffff;" class="main">
+            <h1 style="font-size: 50;">Unleash Your Shoes' Personality</h1>
+            <br>
+
+            <img src="collectionassets/audiotrigger.png" alt="Audio Trigger" id=audio>
+
+            <img src="collectionassets/arrow.png" alt="Downward Arrow" id=arrow>
+
+            <p>CUSTOMIZE. PERSONALIZE. REVOLUTIONIZE.</p>
+
+            <br><br><br>
+            <hr>
+            <div class="carousel">
+
+                <div class="carouselImages">
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionsports.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider1.png" alt="Shoe 1">
+                        <br><br>
+                        <span class="imageTitle">Sports</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectioncartoon.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider2.png" alt="Shoe 2">
+                        <br><br>
+                        <span class="imageTitle">Cartoon</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionletter.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider3.png" alt="Shoe 3">
+
+                        <br><br>
+                        <span class="imageTitle">Letters</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionretro.html"
+                        class="carouselLink">
+                        <img src="collectionassets/strider1.png" alt="Shoe 1">
+                        <br><br>
+                        <span class="imageTitle">Retro</span>
+                    </a>
+                    <a href="https://medler.webdev.iyaserver.com/acad275/Striders/collectionuniversity.html"
+                        class="carouselLink">
                         <img src="collectionassets/strider2.png" alt="Shoe 2">
                         <br><br>
                         <span class="imageTitle">University</span>
@@ -588,6 +921,20 @@
             }
         });
     }
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#audio").on("click", function () {
+            var audioElement = document.getElementById('introduction');
+            if (audioElement.paused) {
+                audioElement.play();
+            } else {
+                audioElement.currentTime = 0; // Reset audio to start if already playing
+            }
+            start();
+        });
+    });
 </script>
 
 </html>
