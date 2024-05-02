@@ -239,3 +239,10 @@ nav ul li a:hover {
     text-decoration: none;
     color: inherit;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: 1fr; /* Stacks all columns into one */
+        padding: 1rem; /* Adjust padding if necessary */
+    }
+}
