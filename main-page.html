@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="carousel.css">
     <script src="carousel.js" defer></script>
     <link href=https://fonts.cdnfonts.com/css/sf-pro-display'' rel=stylesheet''>
+    <script src = "http://code.jquery.com/jquery.js"> </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Spicy+Rice&display=swap');
@@ -30,6 +31,20 @@
             }
         }
 
+        @keyframes volume {
+            0% {
+                width: 70px;
+            }
+
+            50% {
+                width: 90px;
+            }
+
+            100% {
+                width: 70px;
+            }
+        }
+
         hr {
             width: 75%;
             margin: auto;
@@ -43,10 +58,7 @@
         }
 
         .how-it-works {
-            list-style-type: none;
-            text-align: left;
-            margin: auto 20%;
-            line-height: 200%;
+            animation: colorChange 2s infinite;
         }
 
         .accordion {
@@ -131,6 +143,118 @@
                 transform: translateX(0%);
             }
         }
+
+        #audio{
+            position: fixed;
+            top: 150px;
+            right: 100px;
+            width: 70px;
+            height: auto;
+
+            animation: volume 2s infinite;
+        }
+
+        .numbers{
+            font-family: "Spicy Rice", serif;
+            color: white;
+            font-size: 50;
+            border: 10px solid #f5e1f7;
+            background-color: #ef5fb3;
+            border-radius: 70%;
+            width: 150;
+            height: 150;
+            
+            padding: 3%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titles{
+            font-family: "Spicy Rice", serif;
+            color: #ef5fb3;
+            padding: 3%;
+            font-size: 40;
+            position: absolute;
+            float: left
+        }
+
+        #num1{
+            visibility: hidden;
+            position: absolute;
+            top: 1200px;
+        }
+
+        #num2{
+            visibility: hidden;
+            position: absolute;
+            top: 1400px;
+            right: 18%;
+        }
+
+        #num3{
+            visibility: hidden;
+            position: absolute;
+            top: 1600px;
+        }
+
+        #pinbacktext{
+            position: absolute;
+            top: 1200px;
+            left: 600px;
+            visibility: hidden;
+        }
+
+        #pinshieldtext{
+            position: absolute;
+            top: 1400px;
+            right: 500px;
+            visibility: hidden;
+        }
+
+        #pinbodytext{
+            position: absolute;
+            top: 1600px;
+            left: 600px;
+            visibility: hidden;
+        }
+
+        #introduction{
+            cursor:pointer;
+        }
+
+        #howitworks{
+
+        }
+
+        #pinback{
+            position: absolute;
+            width: 180px;
+            height: auto;
+            right: -500px;
+            ledft: 1000;
+            top: 1030px;
+            visibility: hidden;
+        }
+
+        #pinshield{
+            position: absolute;
+            width: 200px;
+            height: auto;
+            left: -200px;
+            top: 1320px;
+            vvisibility: hidden;
+        }
+
+        #pinbody{
+            position: absolute;
+            height: 200px;
+            right: -200px;
+            lfeft: 1000;
+            top: 1600px;
+            visibility: hidden;
+        }
+
+
     </style>
 
 </head>
@@ -164,8 +288,10 @@
 
     <main>
         <div style="background-color: #ffffff;" class="main">
-            <h1>Unleash Your Shoes' Personality</h1>
+            <h1 style="font-size: 50;">Unleash Your Shoes' Personality</h1>
             <br>
+
+            <img src="collectionassets/audiotrigger.png" alt="Audio Trigger" id = audio>
             <p>CUSTOMIZE. PERSONALIZE. REVOLUTIONIZE.</p>
 
             <br><br><br><hr>
@@ -219,15 +345,47 @@
 
             </div>
 
-            <br><br>
-            <div>
-                <h4 style="font-size: 20; text-align: center;" class="how-it-works"> <em> Revolutionize shoe customization by introducing
+            <br>
+            
+            
+
+            <div style="height: 900px;">
+                <h4 style="font-size: 20;"> <em> Revolutionize shoe customization by introducing
                         versatile charms that can attach
                         to any type of shoe! </em> </h4>
 
                 <br><br><br>
-                <h1 style="font-size: 26;" > How it Works </h1><br>
-                <li class="how-it-works">
+                <h1 style="font-size: 40;" class="how-it-works"> How it Works </h1>
+                <li style="text-align: left; margin-left: 25%; margin-right: 25%; line-height: 200%;"
+                    class="how-it-works">
+                
+                <div>
+                    <div class = numbers id = num1>1.</div> 
+                    <div class = titles id = pinbacktext> Pin Back</div>
+                    <br><br><br>
+                </div>
+                <div>
+                    <div class = numbers id = num2>2.</div> 
+                    <div class = titles id = pinshieldtext> Pin Shield</div>
+                    <br><br><br>
+                </div>
+                <div >
+                    <div class = numbers id = num3>3.</div> 
+                    <div class = titles id = pinbodytext> Pin Body</div>
+                    <br><br><br>
+                </div>
+                
+
+                <!--]
+                <div style="width: 100%; bborder: black 1px solid;">
+                    <div class = numbers id = num2>2.</div>
+                    <h1>Pin Shield</h1>
+                </div>
+                  
+                <div style="width: 100%; bborder: black 1px solid;">
+                    <div class = numbers id = num3>3.</div>
+                    <h1>Pin Body</h1>
+                </div>
                     <ul>
                         <strong>Pin Back:</strong> This foundational element is inserted from the inside of the shoe,
                         piercing through the fabric so
@@ -248,9 +406,110 @@
                         snug fit, it ensures the decoration stays secure and is easy to attach, allowing for quick
                         customization.
                     </ul>
+                    -->
+
                 </li>
+                
+                <img src="collectionassets/pin1.png" alt="pin back" id = "pinback">
+                <img src="collectionassets/pin2.png" alt="pin shield" id = "pinshield">
+                <img src="collectionassets/pin3.png" alt="pin body" id = "pinbody">
+
+                <audio id="introduction">
+                    <source type="audio/mp3" src="intro.m4a">
+                </audio>
+                <audio id="howitworks">
+                    <source type="audio/mp3" src="how it works.m4a">
+                </audio>
+                <audio id="pinbackaudio">
+                    <source type="audio/mp3" src="back.m4a">
+                </audio>
+                <audio id="pinshieldaudio">
+                    <source type="audio/mp3" src="shield.m4a">
+                </audio>
+                <audio id="pinbodyaudio">
+                    <source type="audio/mp3" src="body.m4a">
+                </audio>
 
             </div>
+            <script>
+                var start = function(){
+                    $("#introduction").trigger("play");
+
+                    $("#pinback").animate(
+                    {	"right":"350px"}, 26000, "linear",
+
+                    function(){ part1() })
+                }
+                var part1 = function(){
+                    $("#howitworks").trigger("play");
+                    
+                    $("#pinback").animate(
+                    {	"right":"350px"}, 9000, "linear",
+
+                    function(){ part2() })
+                }
+                var part2 = function(){
+                    
+                    $('#pinback').css('visibility', 'visible');
+                    $('#num1').css('visibility', 'visible');
+                    $('#pinbacktext').css('visibility', 'visible');
+
+                    $("#pinbackaudio").trigger("play");
+            
+                    $("#pinback").animate(
+                    {	"left": "1000px"}, 12000, "linear",
+
+                    function(){ part3() } // callback, start part2 when done
+                )
+                }
+                var part3 = function(){
+
+                    $("#pinshieldaudio").trigger("play");
+                    $('#pinshield').css('visibility', 'visible');
+                    $('#num2').css('visibility', 'visible');
+                    $('#pinshieldtext').css('visibility', 'visible');
+
+                    $("#pinshield").animate(
+                        {	"left": "600px"}, 14000, "linear",
+                        function(){ part4() } // callback, start part2 when done
+                    )
+                }
+                var part4 = function(){
+                    $("#pinbodyaudio").trigger("play");
+                    $('#pinbody').css('visibility', 'visible');
+                    $('#num3').css('visibility', 'visible');
+                    $('#pinbodytext').css('visibility', 'visible');
+                    
+                    $("#pinbody").animate(
+                        {	"left": "1000px"}, 17000, "linear"
+                
+                    )
+                }
+                
+                $(document).ready(function(){
+                    
+                    $("#audio").on("click", function(){
+                        start();
+                    });
+                });
+                </script>
+
+            <script>
+                
+                document.querySelector(".how-it-works").addEventListener("click", function(){ 
+
+                    //document.querySelector('#howitworks').play();
+                    part2();
+
+                })
+
+                document.querySelector("#introduction").addEventListener("click", function(){ 
+                    
+                    document.querySelector('#introduction').pause();
+
+                })
+                
+            </script>
 
             <br><br><hr><br>
             <div class="faq">
