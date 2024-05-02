@@ -58,8 +58,7 @@ our project is powered by a dedicated team of innovators and creators. get to kn
 ### :movie_camera: tristan wilcher
 <img src="teamassets/tristan.jpg" width="100" alt="Tristan Wilcher headshot">
 
-- **short bio**: tristan brings a passion for books, production and beat-making, and music business to the USC Iovine and Young Academy. If he’s not reading or making films, you can find him in the studio. He has experience directing and working with creatives.
-- **role**: developer and visual designer
+- **short bio**: Tristan brings passion in video editing, film production, creative problem solving, and beat-making to the USC Iovine and Young Academy. He's directed commercial sets for iHeartRadio and Wir3d and have shot/edited music videos for artists in the Los Angeles and Indianapolis Areas. He took on this project to understand more about utilizing 3D for the web and its unique applications it can have for the customer experience.
 
 ### :partying_face: sinchana nama
 <img src="teamassets/sinchana.jpg" width="100" alt="Sinchana Nama headshot">
