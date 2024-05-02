@@ -80,6 +80,7 @@ window.addEventListener('resize', onWindowResize);
 
 let pins = [];
 const pinPositions = [
+    //sports
     new THREE.Vector3(-.1, 1.2, 0),
     new THREE.Vector3(-.09, 1.5, -.5),
     new THREE.Vector3(-.6, 1.2, 0),
@@ -87,10 +88,50 @@ const pinPositions = [
     new THREE.Vector3(-.6, 1.4, -.35),
     new THREE.Vector3(1, 1.2, 1),
     new THREE.Vector3(-.6, 1.2, 0),
-
+    //animal
+    new THREE.Vector3(-.1, 1.2, 0),
+    new THREE.Vector3(-.09, 1.5, -.5),
+    new THREE.Vector3(-.6, 1.2, 0),
+    new THREE.Vector3(-.55, 1.7, -.2),
+    new THREE.Vector3(-.6, 1.4, -.35),
+    new THREE.Vector3(1, 1.2, 1),
+    new THREE.Vector3(-.6, 1.2, 0),
+    //cartoon
+    new THREE.Vector3(-.1, 1.2, 0),
+    new THREE.Vector3(-.09, 1.5, -.5),
+    new THREE.Vector3(-.6, 1.2, 0),
+    new THREE.Vector3(-.55, 1.7, -.2),
+    new THREE.Vector3(-.6, 1.4, -.35),
+    new THREE.Vector3(1, 1.2, 1),
+    new THREE.Vector3(-.6, 1.2, 0),
+    //letters
+    new THREE.Vector3(-.1, 1.2, 0),
+    new THREE.Vector3(-.09, 1.5, -.5),
+    new THREE.Vector3(-.6, 1.2, 0),
+    new THREE.Vector3(-.55, 1.7, -.2),
+    new THREE.Vector3(-.6, 1.4, -.35),
+    new THREE.Vector3(1, 1.2, 1),
+    new THREE.Vector3(-.6, 1.2, 0),
+    //retro
+    new THREE.Vector3(-.1, 1.2, 0),
+    new THREE.Vector3(-.09, 1.5, -.5),
+    new THREE.Vector3(-.6, 1.2, 0),
+    new THREE.Vector3(-.55, 1.7, -.2),
+    new THREE.Vector3(-.6, 1.4, -.35),
+    new THREE.Vector3(1, 1.2, 1),
+    new THREE.Vector3(-.6, 1.2, 0),
+    //university
+    new THREE.Vector3(-.1, 1.2, 0),
+    new THREE.Vector3(-.09, 1.5, -.5),
+    new THREE.Vector3(-.6, 1.2, 0),
+    new THREE.Vector3(-.55, 1.7, -.2),
+    new THREE.Vector3(-.6, 1.4, -.35),
+    new THREE.Vector3(1, 1.2, 1),
+    new THREE.Vector3(-.6, 1.2, 0),
 ];
 
 const modelPaths = {
+    //sports page
     Soccer: '3D Assets/soccer.gltf',
     Basketball: '3D Assets/cherry.gltf',
     Football: '3D Assets/butterfly.gltf',
@@ -98,6 +139,47 @@ const modelPaths = {
     Nascar: '3D Assets/rollingstone.gltf',
     Dodgers: '3D Assets/bones.gltf',
     Softball: '3D Assets/bones.gltf',
+    //animals page
+    Cat: '3D Assets/soccer.gltf',
+    Unicorn: '3D Assets/cherry.gltf',
+    Ladybug: '3D Assets/bones.gltf',
+    Butterfly: '3D Assets/butterfly.gltf',
+    Dinosaur: '3D Assets/rollingstone.gltf',
+    PawPrint: '3D Assets/bones.gltf',
+    Llama: '3D Assets/bones.gltf',
+    //cartoon page
+    Rick: '3D Assets/soccer.gltf',
+    Morty: '3D Assets/cherry.gltf',
+    BuzzLightyear: '3D Assets/bones.gltf',
+    MinnieMouse: '3D Assets/butterfly.gltf',
+    Snoopy: '3D Assets/rollingstone.gltf',
+    Woodstock: '3D Assets/bones.gltf',
+    Yoda: '3D Assets/bones.gltf',
+    Spongebob: '3D Assets/rollingstone.gltf',
+    // letters
+    A: '3D Assets/soccer.gltf',
+    M: '3D Assets/cherry.gltf',
+    E: '3D Assets/bones.gltf',
+    J: '3D Assets/butterfly.gltf',
+    H: '3D Assets/rollingstone.gltf',
+    O: '3D Assets/bones.gltf',
+    W: '3D Assets/bones.gltf',
+    // retro
+    RetroPack: '3D Assets/soccer.gltf',
+    HangLoose: '3D Assets/cherry.gltf',
+    SeventiesHeartChain: '3D Assets/bones.gltf',
+    DiscoCherries: '3D Assets/butterfly.gltf',
+    FestivalDaisyIcon: '3D Assets/rollingstone.gltf',
+    HeartSunglasses: '3D Assets/bones.gltf',
+    BeadedStrapChain: '3D Assets/bones.gltf',
+    // university
+    Standford: '3D Assets/soccer.gltf',
+    Duke: '3D Assets/cherry.gltf',
+    UOM: '3D Assets/bones.gltf',
+    UOK: '3D Assets/butterfly.gltf',
+    OOU: '3D Assets/rollingstone.gltf',
+    LSU: '3D Assets/bones.gltf',
+    FSU: '3D Assets/bones.gltf',
 };
 
 function tryOn(productName) {
