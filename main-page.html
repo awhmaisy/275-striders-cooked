@@ -154,6 +154,15 @@
             animation: volume 2s infinite;
         }
 
+        #arrow{
+            position: fixed;
+            top: 300px;
+            right: 100px;
+            width: 70px;
+            height: auto;
+            visibility: hidden;
+        }
+
         .numbers{
             font-family: "Spicy Rice", serif;
             color: white;
@@ -173,7 +182,7 @@
             font-family: "Spicy Rice", serif;
             color: #ef5fb3;
             padding: 3%;
-            font-size: 40;
+            font-size: 35;
             position: absolute;
             float: left
         }
@@ -218,20 +227,11 @@
             visibility: hidden;
         }
 
-        #introduction{
-            cursor:pointer;
-        }
-
-        #howitworks{
-
-        }
-
         #pinback{
             position: absolute;
             width: 180px;
             height: auto;
             right: -500px;
-            ledft: 1000;
             top: 1030px;
             visibility: hidden;
         }
@@ -242,14 +242,13 @@
             height: auto;
             left: -200px;
             top: 1320px;
-            vvisibility: hidden;
+            visibility: hidden;
         }
 
         #pinbody{
             position: absolute;
             height: 200px;
             right: -200px;
-            lfeft: 1000;
             top: 1600px;
             visibility: hidden;
         }
@@ -292,6 +291,9 @@
             <br>
 
             <img src="collectionassets/audiotrigger.png" alt="Audio Trigger" id = audio>
+
+            <img src="collectionassets/arrow.png" alt="Downward Arrow" id = arrow> 
+
             <p>CUSTOMIZE. PERSONALIZE. REVOLUTIONIZE.</p>
 
             <br><br><br><hr>
@@ -432,6 +434,9 @@
 
             </div>
             <script>
+
+                
+
                 var start = function(){
                     $("#introduction").trigger("play");
 
@@ -441,44 +446,68 @@
                     function(){ part1() })
                 }
                 var part1 = function(){
+                    $('#arrow').css('visibility', 'visible');
+                    
+                    $("#arrow").animate(
+                        {"top": "500px"}, 1000
+                    ); 
+
                     $("#howitworks").trigger("play");
                     
                     $("#pinback").animate(
                     {	"right":"350px"}, 9000, "linear",
 
                     function(){ part2() })
-                }
-                var part2 = function(){
-                    
-                    $('#pinback').css('visibility', 'visible');
-                    $('#num1').css('visibility', 'visible');
-                    $('#pinbacktext').css('visibility', 'visible');
 
+                }
+
+                var part2 = function(){
+                    /* 
+                    $("#pinbodyaudio").trigger("play");
+                    $('#pinbody').css('visibility', 'visible');
+
+                    $('#num3').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+                    $('#pinbodytext').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+                    
+                    $("#pinbody").animate(
+                        {	"left": "1000px"}, 17000, "linear"
+                
+                    ) */
+
+                    //$('#arrow').css('display', 'none');
+                    
                     $("#pinbackaudio").trigger("play");
-            
+                    $('#pinback').css('visibility', 'visible');
+
+                    $('#num1').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+                    $('#pinbacktext').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+
                     $("#pinback").animate(
                     {	"left": "1000px"}, 12000, "linear",
 
-                    function(){ part3() } // callback, start part2 when done
-                )
+                    function(){ part3() } )
+            
                 }
                 var part3 = function(){
 
                     $("#pinshieldaudio").trigger("play");
+
                     $('#pinshield').css('visibility', 'visible');
-                    $('#num2').css('visibility', 'visible');
-                    $('#pinshieldtext').css('visibility', 'visible');
+
+                    $('#num2').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+                    $('#pinshieldtext').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
 
                     $("#pinshield").animate(
                         {	"left": "600px"}, 14000, "linear",
-                        function(){ part4() } // callback, start part2 when done
+                        function(){ part4() } 
                     )
                 }
                 var part4 = function(){
                     $("#pinbodyaudio").trigger("play");
                     $('#pinbody').css('visibility', 'visible');
-                    $('#num3').css('visibility', 'visible');
-                    $('#pinbodytext').css('visibility', 'visible');
+
+                    $('#num3').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
+                    $('#pinbodytext').css({opacity: 0, visibility: "visible"}).animate({opacity: 1}, 'slow');
                     
                     $("#pinbody").animate(
                         {	"left": "1000px"}, 17000, "linear"
@@ -498,16 +527,16 @@
                 
                 document.querySelector(".how-it-works").addEventListener("click", function(){ 
 
-                    //document.querySelector('#howitworks').play();
                     part2();
 
                 })
 
+                /*
                 document.querySelector("#introduction").addEventListener("click", function(){ 
                     
                     document.querySelector('#introduction').pause();
 
-                })
+                })*/
                 
             </script>
 
