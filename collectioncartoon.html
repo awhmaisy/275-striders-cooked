@@ -43,10 +43,10 @@
 <main>
     <div class="main">
         <h1>Cartoons</h1>
-        <p>Step into fun and express your cartoon love with every stride!</p>
+        <p>Step into fun and express your cartoon love with every stride</p>
     </div>
 </main>
-
+<div class="content-area">
 <section class="product-list">
     <div class="product">
         <div class="heart" onclick="toggleHeart(event, 'Rick', 6, 'collectionassets/rick.avif', 'Product 1')">🤍</div>
@@ -54,6 +54,8 @@
         <h2>Rick</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Rick', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Rick">Try On!</button>
+
     </div>
     
     <div class="product">
@@ -62,22 +64,28 @@
         <h2>Morty</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Morty', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Morty">Try On!</button>
+
     </div>
     
     <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Buzz Lightyear', 6, 'collectionassets/buzzlight.avif', 'Product 3')">🤍</div>
+        <div class="heart" onclick="toggleHeart(event, 'BuzzLightyear', 6, 'collectionassets/buzzlight.avif', 'Product 3')">🤍</div>
         <img src="collectionassets/buzzlight.avif" alt="Product 3">
         <h2>Buzz Lightyear</h2>
         <p>$6.00</p>
-        <button onclick="addToCart('Buzz Lightyear', 6)">Add to Cart</button>
+        <button onclick="addToCart('BuzzLightyear', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="BuzzLightyear">Try On!</button>
+
     </div>
     
     <div class="product">
-        <div class="heart" onclick="toggleHeart(event, 'Minnie Mouse', 6, 'collectionassets/minnie.avif', 'Product 4')">🤍</div>
+        <div class="heart" onclick="toggleHeart(event, 'MinnieMouse', 6, 'collectionassets/minnie.avif', 'Product 4')">🤍</div>
         <img src="collectionassets/minnie.avif" alt="Product 4">
         <h2>Minnie Mouse</h2>
         <p>$6.00</p>
-        <button onclick="addToCart('Minnie Mouse', 6)">Add to Cart</button>
+        <button onclick="addToCart('MinnieMouse', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="MinnieMouse">Try On!</button>
+
     </div>
     
     <div class="product">
@@ -86,6 +94,8 @@
         <h2>Snoopy</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Snoopy', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Snoopy">Try On!</button>
+
     </div>
     
     <div class="product">
@@ -94,6 +104,8 @@
         <h2>Woodstock</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Woodstock', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Woodstock">Try On!</button>
+
     </div>
     
     <div class="product">
@@ -102,6 +114,8 @@
         <h2>Yoda</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Yoda', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Yoda">Try On!</button>
+
     </div>
     
     <div class="product">
@@ -110,35 +124,26 @@
         <h2>Spongebob</h2>
         <p>$6.00</p>
         <button onclick="addToCart('Spongebob', 6)">Add to Cart</button>
+        <button class="try-on-btn" data-product="Spongebob">Try On!</button>
+
     </div>
 </section>
+    <div class="shoe-viewer">
+    </div>
+</div>
 
 <footer>
-    <footer class="footer">
-        <div class="column">
-            <strong>Team Links</strong>
-            <ul>
-                <li><a href="https://github.com/awhmaisy/275-striders-cooked">Our GitHub</a></li>
-                <li><a
-                        href="https://app.mural.co/t/academydev4025/m/academydev4025/1711638743168/8316d295296c91f1cdee9bb4a824204a2847dcb8?sender=dent0367">Our
-                        Mural Page</a></li>
-            </ul>
-        </div>
-        <div class="column"><strong>Page Navigation</strong>
-            <ul>
-                <li><a href="main-page.html">Home</a></li>
-                <li><a href="all-pins.html">All Pins</a></li>
-                <li><a href="collections.html">Collections</a></li>
-                <li><a href="why-striders.html">Why Striders?</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-            </ul>
-        </div>
-        <div class="column"><em>&copy; 2024 Striders.</em><br><em>All rights reserved.</em></div>
-        <div class="column logo">
-            <div class="logo"><a href="main-page.html">Striders.</a></div>
-        </div>
-    </footer>
+    <p>&copy; 2024 Striders Shoes. All rights reserved.</p>
 </footer>
+
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.132.2/examples/jsm/"
+      }
+    }
+  </script>
 
 <script>
     function addToCart(productName, price) {
@@ -158,6 +163,7 @@
 
 </body>
 
+<script type="module" src="shoe.js"></script>
 <script src="search.js"></script>
 <script src="wishlist.js"></script>
 
