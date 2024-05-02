@@ -930,7 +930,7 @@
             if (audioElement.paused) {
                 audioElement.play();
             } else {
-                audioElement.currentTime = 0;
+                audioElement.currentTime = 0; // Reset audio to start if already playing
             }
             start();
         });
